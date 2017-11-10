@@ -1,0 +1,34 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Achanta et~al.}{2012}]{Achanta2012}
+Achanta, R., Shaji, A., Smith, K., Lucchi, A., Fua, P., and S{\"{u}}sstrunk, S.
+  (2012).
+\newblock {SLIC superpixels compared to state-of-the-art superpixel methods}.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  34(11):2274--2281.
+
+\bibitem[\protect\astroncite{Ballard}{1981}]{Ballard1981}
+Ballard, D.~H. (1981).
+\newblock {Generalizing the Hough Transform To Detect Arbitrary Shapes*}.
+\newblock {\em Pattern Recoqnition}, 13(2):111--122.
+
+\bibitem[\protect\astroncite{Esa}{2009}]{Esa2009a}
+Esa (2009).
+\newblock {50 years of Earth Observation}.
+
+\bibitem[\protect\astroncite{Lary}{2010}]{Lary2010}
+Lary, D.~J. (2010).
+\newblock {Artificial Intelligence in Geosience and Remote Sensing}.
+\newblock {\em RFID Technology, Security Vulnerabilities, and Countermeasures},
+  pages 75--100.
+
+\bibitem[\protect\astroncite{Moon et~al.}{2002}]{Moon2002}
+Moon, H., Chellappa, R., and Rosenfeld, A. (2002).
+\newblock {Optimal edge-based shape detection}.
+\newblock {\em IEEE Transactions on Image Processing}, 11(11):1209--1227.
+
+\bibitem[\protect\astroncite{Worboys}{2003}]{Worboys2003}
+Worboys, M.~F. (2003).
+\newblock {\em {GIS: A computing perspective}}.
+
+\end{thebibliography}

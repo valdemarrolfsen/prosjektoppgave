@@ -1,0 +1,31 @@
+\contentsline {section}{Preface}{i}{Doc-Start}
+\contentsline {section}{Acknowledgment}{ii}{section*.1}
+\contentsline {section}{Executive Summary}{iii}{section*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objectives}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Approach}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Contributions}{5}{section.1.4}
+\contentsline {section}{\numberline {1.5}Limitations}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}Outline}{5}{section.1.6}
+\contentsline {chapter}{\numberline {2}Theoretical background}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Shape detection}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}The standard approach}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}The cognitive approach}{9}{subsection.2.1.2}
+\contentsline {chapter}{\numberline {3}Equations, etc}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Simple Equations}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Including Figures}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Including Tables}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Copying Figures and Tables}{14}{section.3.4}
+\contentsline {section}{\numberline {3.5}References to Figures and Tables}{14}{section.3.5}
+\contentsline {section}{\numberline {3.6}A Word About Font-encoding}{14}{section.3.6}
+\contentsline {section}{\numberline {3.7}Plagiarism}{15}{section.3.7}
+\contentsline {chapter}{\numberline {4}Conclusions}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Summary and Conclusions}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Discussion}{16}{section.4.2}
+\contentsline {section}{\numberline {4.3}Recommendations for Further Work}{17}{section.4.3}
+\contentsline {chapter}{\numberline {A}Acronyms}{18}{appendix.A}
+\contentsline {chapter}{\numberline {B}What to put in appendixes}{19}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{19}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}More Details}{19}{subsection.B.1.1}
+\contentsline {chapter}{Bibliography}{20}{subsection.B.1.1}
