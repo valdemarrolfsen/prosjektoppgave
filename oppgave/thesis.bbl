@@ -22,10 +22,19 @@ Lary, D.~J. (2010).
 \newblock {\em RFID Technology, Security Vulnerabilities, and Countermeasures},
   pages 75--100.
 
+\bibitem[\protect\astroncite{Lary et~al.}{2016}]{Lary2016}
+Lary, D.~J., Alavi, A.~H., Gandomi, A.~H., and Walker, A.~L. (2016).
+\newblock {Machine learning in geosciences and remote sensing}.
+\newblock {\em Geoscience Frontiers}, 7(1):3--10.
+
 \bibitem[\protect\astroncite{Moon et~al.}{2002}]{Moon2002}
 Moon, H., Chellappa, R., and Rosenfeld, A. (2002).
 \newblock {Optimal edge-based shape detection}.
 \newblock {\em IEEE Transactions on Image Processing}, 11(11):1209--1227.
+
+\bibitem[\protect\astroncite{Opencv}{2017}]{Opencv2017}
+Opencv (2017).
+\newblock {OpenCV 2.4.13.4 documentation}.
 
 \bibitem[\protect\astroncite{Worboys}{2003}]{Worboys2003}
 Worboys, M.~F. (2003).

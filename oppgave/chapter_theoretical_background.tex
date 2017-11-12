@@ -42,6 +42,42 @@ In \autoref{eq:distanceSuperpixel} $d_{c}$ is the euclidean distance between two
 Since the algorithm generates superpixels by clustering pixels based on their color and spatial proximity, creating a 5 dimensional, \textit{labxy} space, one would think that the distance could be found by simply taking the 5D euclidean distance. However, it turns out that for large superpixels, spatial distance outweigh the color proximity. Which is why the two distances $d_{c}$ and $d_{s}$ are weighted.
 
 \subsection{The cognitive approach}
+In recent years, the development of machine learning, a branch of artificial intelligent systems, has become increasingly important in terms of pattern and object recognition in remote sensing and image analysis in general.
+
+\cite{Lary2016} propose nine different branches of machine learning that are commonly used for data mining in remote sensing. These algorithms are artificial neural networks (ANN), support vector machines (SVM), self-organizing map (SOM), decision trees (DT), ensemble methods such as random forests, case-based reasoning, neuro-fuzzy (NF), generic algorithm (GA) and multivariate adaptive regression splines (MARS). In particular, three of these algorithms are of interest.
+
+\subsubsection*{Artificial Neural Networks}
+The basic principle behind artificial neural networks (ANNs) is that it is built up by a network of many simple units that are working in parallel with no centralized control unit. The networks primary means of storage are the weights between the individual units, and the network learns by updating these weights in relation to being provided with a training example.
+
+In order to understand the behavior of ANNs it is important to understand their structure. An ANN is build up by a given number of connected layers. A layer is a collection of simple units, called artificial neurons. All ANNs must consist of an input and output layer, but can also contain an optional number of hidden layers. A network which only consists of an input and output layer is called a perceptron.
+
+\subsubsection*{Support vector machines}
+In machine learning, support vector machines (SVM) are supervised learning models used for classification and regression analysis.
+
+In a SVM model training examples are represented as points in a n-dimensional space, mapped so that the examples belonging to separate categories are clustered together. One or more hyperplanes are then fitted in order to separate the different classes from each other. New data is then mapped into that same space and classified based on which side of the hyperplane they are mapped. SVMs are often called large margin classifiers because their goal is to separate the classes by fitting the hyperplanes between them in a way so that the planes has the highest possible margin between the classes as shown in \autoref{fig:optimalmargin}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=2.5]{fig/optimal-hyperplane.png}
+	\caption{Example of optimal hyperplane for classification from \cite{Opencv2017}}
+	\label{fig:optimalmargin}
+\end{figure}
+
+In order for support vector machines to work, the data points has to be separable by a plane. This is however not always possible in the dimension that the data is represented. In order to solve this issue SVM apply kernel functions.
+
+Kernel functions enable SVM to operate in a high-dimensional, implicit feature space without ever computing the coordinates of the data in that dimension space. It simply computes the inner products between the images of all pairs of data in the feature space. This operation is often computationally cheaper than the explicit computation of the coordinates.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{fig/kernel_function.png}
+	\caption{Classification using SVM with kernel function \cite{Opencv2017}}
+	\label{fig:kernerlfunction}
+\end{figure}
+
+\subsubsection*{Decision Trees}
+Decision tree learning is one of the simplest and yet most successful forms of machine learning. They are learned top-down, and they use a recursive learning technique.
+
+A decision tree represents a function that takes as input a vector of attribute values and returns a “decision” - a single output value. Furthermore, it is worth mentioning that decision trees are only good for some kind of functions.
 
 Links:
 

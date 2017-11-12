@@ -17,7 +17,7 @@ args = vars(ap.parse_args())
 img = img_as_float(io.imread(args['image']))
 io.imshow(img)
 
-for segs in (1000, 2000, 5000, 10000):
+for segs in (1000, 2000, 5000, 10000, 100000):
     segments = slic(img, n_segments=segs, sigma=4)
     fig = plt.figure(figsize=(12, 4))
     ax = fig.add_axes([0, 0, 1, 1])
