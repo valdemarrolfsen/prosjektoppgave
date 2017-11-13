@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.24)  12 NOV 2017 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.24)  13 NOV 2017 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -895,11 +895,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
 (./thesis.aux (./front.aux) (./preface.aux) (./acknowledgment.aux)
-(./summary.aux) (./chapter01.aux) (./chapter_theoretical_background.aux
-
-LaTeX Warning: Label `fig:optimalmargin' multiply defined.
-
-) (./chapter02.aux) (./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux))
+(./summary.aux) (./chapter01.aux) (./chapter_theoretical_background.aux)
+(./chapter02.aux) (./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1197,40 +1194,47 @@ Overfull \hbox (0.8802pt too wide) in paragraph at lines 6--7
  clas-si-cal prob-lem for decades. There
  []
 
-[7
-
-
-
-] <fig/superpixels.png, id=244, 803.0pt x 604.2575pt>
+<fig/superpixels.png, id=240, 803.0pt x 604.2575pt>
 File: fig/superpixels.png Graphic file (type png)
-
-<use fig/superpixels.png>
-Package pdftex.def Info: fig/superpixels.png used on input line 17.
+ <use fig/superpixels.png>
+Package pdftex.def Info: fig/superpixels.png used on input line 15.
 (pdftex.def)             Requested size: 240.90186pt x 181.27864pt.
- [8 <./fig/superpixels.png>] [9]
-<fig/optimal-hyperplane.png, id=275, 72.27pt x 71.3064pt>
-File: fig/optimal-hyperplane.png Graphic file (type png)
-
-<use fig/optimal-hyperplane.png>
-Package pdftex.def Info: fig/optimal-hyperplane.png used on input line 61.
-(pdftex.def)             Requested size: 180.67451pt x 178.26549pt.
-
-<fig/kernel_function.png, id=278, 875.27pt x 489.83pt>
-File: fig/kernel_function.png Graphic file (type png)
-
-<use fig/kernel_function.png>
-Package pdftex.def Info: fig/kernel_function.png used on input line 72.
-(pdftex.def)             Requested size: 262.58302pt x 146.95012pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./fig/optimal-hyperplane.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 84--29
+[7
+
+
+
+] [8 <./fig/superpixels.png>] [9] [10]
+<fig/backpropagation_two_layers.png, id=294, 148.3944pt x 211.0284pt>
+File: fig/backpropagation_two_layers.png Graphic file (type png)
+
+<use fig/backpropagation_two_layers.png>
+Package pdftex.def Info: fig/backpropagation_two_layers.png used on input line 
+93.
+(pdftex.def)             Requested size: 148.39403pt x 211.02788pt.
+ [11 <./fig/backpropagation_two_layers.png>] [12] [13] <fig/optimal-hyperplane.
+png, id=334, 72.27pt x 71.3064pt>
+File: fig/optimal-hyperplane.png Graphic file (type png)
+
+<use fig/optimal-hyperplane.png>
+Package pdftex.def Info: fig/optimal-hyperplane.png used on input line 153.
+(pdftex.def)             Requested size: 180.67451pt x 178.26549pt.
+ [14 <./fig/optimal-hyperplane.png>]
+<fig/kernel_function.png, id=350, 875.27pt x 489.83pt>
+File: fig/kernel_function.png Graphic file (type png)
+
+<use fig/kernel_function.png>
+Package pdftex.def Info: fig/kernel_function.png used on input line 164.
+(pdftex.def)             Requested size: 262.58302pt x 146.95012pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 176--29
 
  []
 
-[11 <./fig/kernel_function.png>]
+[15 <./fig/kernel_function.png>]
 \openout2 = `chapter02.aux'.
 
  (./chapter02.tex
@@ -1245,7 +1249,7 @@ uts/m/n/12 (\FMS/futm/m/n/12 ^^@\FML/futmi/m/it/12 ^^Ux\T1/futs/m/n/12 ) \FML/f
 utmi/m/it/12 dx$\T1/futs/m/n/12 ,
  []
 
-[12
+[16
 
 
 
@@ -1256,12 +1260,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
-<fig/NTNU.pdf, id=304, 241.90375pt x 53.19875pt>
+<fig/NTNU.pdf, id=366, 241.90375pt x 53.19875pt>
 File: fig/NTNU.pdf Graphic file (type pdf)
  <use fig/NTNU.pdf>
 Package pdftex.def Info: fig/NTNU.pdf used on input line 64.
 (pdftex.def)             Requested size: 145.14336pt x 31.91948pt.
- [13]
+ [17]
 File: fig/NTNU.pdf Graphic file (type pdf)
 
 <use fig/NTNU.pdf>
@@ -1282,35 +1286,35 @@ raphics \T1/futs/m/n/12 for fig-ures, and above the com-mand $\FMS/futm/m/n/12
 n$\T1/cmtt/m/n/12 begin{tabular*}
  []
 
-[14 <./fig/NTNU.pdf>] [15]
+[18 <./fig/NTNU.pdf>] [19]
 
-Package natbib Warning: Citation `rausand04' on page 16 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 20 undefined on input line
  110.
 
 
-Package natbib Warning: Citation `rausand04' on page 16 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 20 undefined on input line
  112.
 
-[16]
+[20]
 
-Package natbib Warning: Citation `rausand04' on page 17 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 21 undefined on input line
  135.
 
-) [17]
+) [21]
 \openout2 = `chapter0n.aux'.
 
  (./chapter0n.tex
 Chapter 4.
-[18
+[22
 
 
 
-]) [19]
+]) [23]
 \openout2 = `acronyms.aux'.
 
  (./acronyms.tex
 Appendix A.
-) [20
+) [24
 
 
 
@@ -1319,7 +1323,7 @@ Appendix A.
 
  (./appendix-b.tex
 Appendix B.
-) [21
+) [25
 
 
 
@@ -1328,7 +1332,7 @@ Appendix B.
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
-[22
+[26
 
 
 ]
@@ -1339,18 +1343,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: ADF80B941E96E281BF6F8679FA1BF3E0;1862.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 9E1CF6B19B73E3B85992AA9C7EC8C708;1997.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
- 8613 strings out of 492995
- 119985 string characters out of 6132703
- 212705 words of memory out of 5000000
- 11806 multiletter control sequences out of 15000+600000
+ 8657 strings out of 492995
+ 120690 string characters out of 6132703
+ 213200 words of memory out of 5000000
+ 11821 multiletter control sequences out of 15000+600000
  115231 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,10n,34p,980b,377s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1366,10 +1366,10 @@ ve/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2017
 onts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/adobe/utopia/putri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (27 pages, 1505696 bytes).
+Output written on thesis.pdf (31 pages, 1567474 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 94 named destinations out of 1000 (max. 500000)
- 269 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 498 PDF objects out of 1000 (max. 8388607)
+ 439 compressed objects within 5 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 282 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,22 +10,23 @@
 \BOOKMARK [1][-]{section.1.6}{Outline}{chapter.1}% 10
 \BOOKMARK [0][-]{chapter.2}{Theoretical background}{}% 11
 \BOOKMARK [1][-]{section.2.1}{Shape detection}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.1.1}{The standard approach}{section.2.1}% 13
-\BOOKMARK [2][-]{subsection.2.1.2}{The cognitive approach}{section.2.1}% 14
-\BOOKMARK [0][-]{chapter.3}{Equations, etc}{}% 15
-\BOOKMARK [1][-]{section.3.1}{Simple Equations}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{Including Figures}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.3}{Including Tables}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.4}{Copying Figures and Tables}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.5}{References to Figures and Tables}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.6}{A Word About Font-encoding}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.7}{Plagiarism}{chapter.3}% 22
-\BOOKMARK [0][-]{chapter.4}{Conclusions}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Summary and Conclusions}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.2}{Discussion}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.3}{Recommendations for Further Work}{chapter.4}% 26
-\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 27
-\BOOKMARK [0][-]{appendix.B}{What to put in appendixes}{}% 28
-\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 29
-\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 30
-\BOOKMARK [0][-]{subsection.B.1.1}{Bibliography}{}% 31
+\BOOKMARK [2][-]{subsection.2.1.1}{Shape detection using superpixels}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.2}{Artificial Neural Networks for shape detection}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.3}{Support vector machines for shape recognition}{section.2.1}% 15
+\BOOKMARK [0][-]{chapter.3}{Equations, etc}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Simple Equations}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Including Figures}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.3}{Including Tables}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Copying Figures and Tables}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.5}{References to Figures and Tables}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.6}{A Word About Font-encoding}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.7}{Plagiarism}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Conclusions}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Summary and Conclusions}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Discussion}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Recommendations for Further Work}{chapter.4}% 27
+\BOOKMARK [0][-]{appendix.A}{Acronyms}{}% 28
+\BOOKMARK [0][-]{appendix.B}{What to put in appendixes}{}% 29
+\BOOKMARK [1][-]{section.B.1}{Introduction}{appendix.B}% 30
+\BOOKMARK [2][-]{subsection.B.1.1}{More Details}{section.B.1}% 31
+\BOOKMARK [0][-]{subsection.B.1.1}{Bibliography}{}% 32
