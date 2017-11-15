@@ -5,7 +5,7 @@ In this chapter we are going to investigate some of the key concepts related to 
 \section{Shape detection}
 Identifying geometric shapes in computer vision has been a classical problem for decades. There are many theories related to what is the best way of detecting a particular shape in an image, with shapes defines as two dimensional features of an object that are invariant to scene factors, or whose variation can be modeled easily \citep{Moon2002}.
 
-\subsection{Shape detection using superpixels}
+\section{Shape detection using superpixels}
 Most images are based on a raster format, meaning that pixels in the image are structured as an array or grid, where each pixel is associated with a position (row and column), and a numeric value. Raster images can represent a range of different shapes, where a point can be represented by a single pixel and a circle by a contiguous collection of pixels \citep{Worboys2003}. Even though rasters are easy to work with in most computer systems, since they are represented the way that they are, they do not contain any information about the topology of the objects in the image. For example, there is no way of knowing if a pixel is contained within a certain object or not. In order to identify objects, one approach is therefore to detect edge pixels.
 
 In recent years shape detection algorithms have come to increasingly rely on superpixel algorithms, which groups pixels into perceptually meaningful atomic regions \citep{Achanta2012}. Such regions replace the regular, rigid structure of the raster grid, as shown in \autoref{fig:superpixels}.
@@ -27,7 +27,7 @@ When constructing superpixels, there are some properties of the algorithm that a
 
 \cite{Achanta2012} proposes a superpixel-segmentation algorithm (SLIC), which in their opinion is best suited to meet these demands. They compare their algorithm to a variety of state-of-the-art superpixel methods, and conclude that none of the existing methods are satisfactory in regards to the points.
 
-\subsubsection{Simple Linear Iterative Clustering (SLIC)}
+\subsection{Simple Linear Iterative Clustering (SLIC)}
 The SLIC algorithm is fairly simple to understand. One of its key principles is that, by limiting the search space for each cluster center (points in the regular raster grid), it reduces the search speed significantly. This is achievable due to the fact that one of the primary goals of algorithm is to create a set of approximately equal sized superpixels. Thus, instead of searching the whole raster grid for each cluster center, the algorithm only has to search for edge pixels at a distance equal to D, as shown in \autoref{eq:distanceSuperpixel}.
 
 \begin{equation}
@@ -39,14 +39,14 @@ In \autoref{eq:distanceSuperpixel} $d_{c}$ is the euclidean distance between two
 
 Since the algorithm generates superpixels by clustering pixels based on their color and spatial proximity, creating a 5 dimensional, \textit{labxy} space, one would think that the distance could be found by simply taking the 5D euclidean distance. However, it turns out that for large superpixels, spatial distance outweigh the color proximity. Which is why the two distances $d_{c}$ and $d_{s}$ are weighted.
 
-\subsection{Artificial Neural Networks for shape detection}
+\section{Artificial Neural Networks}
 In recent years, the development of machine learning, a branch of artificial intelligent systems, has become increasingly important in terms of pattern and object recognition in remote sensing and image analysis in general. One of the most commonly used approaches for data mining in remote sensing, has been artificial neural networks \cite{Lary2016}.
 
 The basic principle behind artificial neural networks (ANNs) is that it is built up by a network of many simple units that are working in parallel with no centralized control unit. The networks primary means of storage are the weights between the individual units, and the network learns by updating these weights in relation to being provided with a training example.
 
 In order to understand the behavior of ANNs it is important to understand their structures. The most common structure for an ANN is what is called a Feed-forward neural network structure.
 
-\subsubsection{Feed-forward neural networks}
+\subsection{Feed-forward neural networks}
 A feed-forward neural network is build up by a given number of connected layers. A layer is a collection of simple units, called artificial neurons. All networks must consist of an input and output layer, but can also contain an optional number of hidden layers. A network that only consists of an input and output layer is called a perceptron, and it has been shown that these types of networks are only able to model linear functions \citep{Minsky1969}.
 
 \paragraph{Input Layer}
@@ -60,7 +60,7 @@ In order to extract the answer or prediction from the model, an output layer has
 
 A feed forward network can either be fully og partly connected. In a fully connected network, all the neurons in each layer has a connection to all neurons in the previous layer, and all neurons in the next layer, while in a partly connected layer only some of the neurons are connected.
 
-\subsubsection{Training a neural network}
+\subsection{Training a neural network}
 The main purpose of a well trained ANN is to be able, by using its weighted connections, to amplify the signal and dampen the noise of the data it has been trained on. It does so by altering the different weights and biases in a way that allocates significance to some features and removing it from other. This way the model can learn which features are tied to which outcomes.
 
 Neural networks learn these relationships by making a guess based on the input, weights and biases, and then get feedback on how accurate the guess was. It is the loss function related to the model, such as stochastic gradient decent (SDG), which gives this feedback by rewarding good guesses and penalizing bad ones.
@@ -97,7 +97,7 @@ where the input sum is given by:
 
 The backpropagation algorithm traverses the network backwards, updating the weight of connection between each layer, as describd in \autoref{eq:backupdate}, until it reaches the input layer. This way the weights and biases that have been assigned the blame for the error are reduced, while the ones that supporting the correct answer are strengthened. 
 
-\subsubsection{Activation functions}
+\subsection{Activation functions}
 Activation functions are scalar-to-scalar functions which are used to propagate the output of one layer to the next, and it is what enables the network to model nonlinear functions. This section will discuss some of the most common activation functions used in ANNs.
 
 \paragraph{Linear}
@@ -115,7 +115,7 @@ The softmax function, also referred to as the normalized, exponential function, 
 \paragraph{ReLU}
 The rectified linear unit function is currently considered the state of the art activation function. It can be described as $f(x)=max(0,x)$, meaning that it, above a certain threshold the output has a linear relationship with the dependent variable, it is else zero.
 
-\subsubsection{Loss functions}
+\subsection{Loss functions}
 When working with artificial neural networks, we often talk about the ideal state of the network, meaning the state that classifies all the examples correctly. The loss function is a way of quantifying how close a network is to this ideal state. This is done by aggregating the errors produced by the networks prediction over the entire dataset, and average this value to get a single number that represents how close the network is to its ideal state. In other words, by minimizing the loss function, the network gets as close as possible to its ideal state, resulting in an optimization problem where the solution can be approximated well with iterative optimization algorithms.
 
 There are different loss functions that are appropriate for regression and classification problems, however for the purpose of this project report it is only relevant to discuss the ones related to classification problems.
@@ -130,7 +130,7 @@ Optimizing the logistic loss function is the same as optimizing the "maximal lik
 
 NOT FINISHED HERE
 
-\subsubsection{Hyperparamenters}\label{section:hyperparameters}
+\subsection{Hyperparamenters}\label{section:hyperparameters}
 In machine learning, hyperparameters deal with controlling the optimazation functions during learning, making sure that they neither overfit or underfit the data, but at the same time learns as quickly as possible.
 
 \paragraph{Learning rate}
@@ -145,39 +145,75 @@ Momentum is often described as the the learning rate of the learning rate. What 
 \paragraph{Sparsity}
 Lastly, the sparsity hyperparameter helps recognize which features of the input examples that are relevant. This is important because in some datasets, the feature arrays for each example will be very different in terms of values.
 
+\subsection{Convolutional neural networks}
+In recent years, convolutional neural networks (CNNs) have been recognized as very suitable for object recognition in images \cite{Patterson2017}. One of the main reasons why the world, research society recognizes the power of deep learning have been the efficancy of CNNs image recognition capabilities. The name comes from the networks use of convolutions, a mathematical operation on two functions in order to produce a third.
 
-\subsection{Support vector machines for shape recognition}\label{section:svm}
-In machine learning, support vector machines (SVM) are supervised learning models used for classification and regression analysis. 
+\subsubsection{Biological Inspiration}
+As all neural networks, CNNs are very inspired by the biological neurons in animal brains. The CNNs are especially inspired by the visual cortex, which cells are very sensitive to small subregions of the input. One often say that these cells act as local filters over the input space, which also is the case for CNNs.
 
-In a SVM model training examples are represented as points in a n-dimensional space, mapped so that the examples belonging to separate categories are clustered together. One or more hyperplanes are then fitted in order to separate the different classes from each other. New data is then mapped into that same space and classified based on which side of the hyperplane they are mapped. SVMs are often called large margin classifiers because their goal is to separate the classes by fitting the hyperplanes between them in a way so that the planes has the highest possible margin between the classes as shown in \autoref{fig:optimalmargin}.
+\subsubsection{Difference from regular feed-forward multilayer neural networks}
+A well known problem when it comes to analyzing image data using regular feed-forward multilayer neural networks, is that they do not scale well with increasing image sizes. Imagine an color image with the size 400x400 pixels (which would be a regular sized picture) that are used as input for a ANN. Such an image, represented as a vector, would create $400*400*3=480 000$ different weight connections for each neuron in the first hidden layer. For a fully connected network, this would be the case for all layers to come, which would create a tremendous amount of weight connections.
+
+Convolutional neural networks solve this issue by representing the images in a three-dimensional structure, meaning that the input data is represented as a three-dimensional matrix with:
+
+\begin{itemize}
+	\item Image width in pixels
+	\item Image height in pixels
+	\item RGB channels in depth
+\end{itemize}
+
+As will be discussed later, this structure is how CNNs have evolved from previous feed-forward networks, in terms of computational efficiency.
+
+\subsubsection{Architecture}
+The purpose of the network is to transform the input examples through a series of connected layers, into a set of class scores. A general architecture is presented in \autoref{fig:cnnarchitecture}.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=2.5]{fig/optimal-hyperplane.png}
-	\caption{Example of optimal hyperplane for classification from \cite{Opencv2017}}
-	\label{fig:optimalmargin}
+	\includegraphics[scale=0.6]{fig/cnn_architecture.png}
+	\caption{A general presentation of the architecture of CNNs \cite{Patterson2017}}
+	\label{fig:cnnarchitecture}
 \end{figure}
 
-In order for support vector machines to work, the data points has to be separable by a plane. This is however not always possible in the dimension that the data is represented. In order to solve this issue SVM apply kernel functions.
+As seen in \autoref{fig:cnnarchitecture} the network can be divided into three sections; Input, Feature-extraction and Classification layer(s). The most interesting part of this structure is the feature-extraction layers, which is used to identify a number of features in the images, and from these construct higher-order features. The strategy of constructing high-order features is one of the key aspects of deep learning.
 
-Kernel functions enable SVM to operate in a high-dimensional, implicit feature space without ever computing the coordinates of the data in that dimension space. It simply computes the inner products between the images of all pairs of data in the feature space. This operation is often computationally cheaper than the explicit computation of the coordinates. In \autoref{fig:kernelfunction}  a 2-dimensional, non-separable dataset is mapped to a 3-dimensional, separable feature space.
+\remark{ It is important to note that in a CNNs layers, the neurons are arranged in a three-dimensional structure, in order to match the input data, as described earlier.}
+
+\subsubsection{Convolutional layers}
+The convolution layers, seen in \autoref{fig:cnnarchitecture}, detect features in an image through what is called the convolution operation. As mentioned in the beginning of this chapter is a convolution operation a mathematical operation that transforms two functions (or sets of information) into one, through Fourier transformations. The way that this works, is that the layer applies certain filters, called kernel filters, to segments of its input using a technique called sliding window.\footnote{A technique that slides over a set of data, only analyzing a pre-defined patch size at a time \cite{Stanford2017}} The convolution operator is described in  \autoref{eq:convop}, where $I$ is the input data and $K$ is the kernel filter of size $h*w$.
+
+\begin{equation}\label{eq:convop}
+(I*K)_{xy} = \sum_{i=1}^{h}\sum_{j=1}^{w}K_{ij} \cdot I_{x+i-1,y+j-1}
+\end{equation}
+
+Such filters can for example be an edge kernel, which only passes through information containing edges. In most cases applying a filter means reducing the size of the data, thus reducing the number of neurons in each, upcoming layer.
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.3]{fig/kernel_function.png}
-	\caption{Classification using SVM with kernel function \cite{Opencv2017}}
-	\label{fig:kernelfunction}
+	\includegraphics[scale=1.5]{fig/kernel_filter.png}
+	\caption{The convolution operation (applying a kernel filter) \cite{Cambridge2017}}
+	\label{fig:cnnarchitecture}
 \end{figure}
 
-\subsubsection*{Decision Trees}
-Decision tree learning is one of the simplest and yet most successful forms of machine learning. They are learned top-down, and they use a recursive learning technique.
+\subsubsection{ReLU layers}
+As seen in \autoref{fig:cnnarchitecture}, ReLU activation functions are often used in separate layers. This layer does not change the dimension of the input volume, but can change some of the pixel values.
 
-A decision tree represents a function that takes as input a vector of attribute values and returns a “decision” - a single output value. Furthermore, it is worth mentioning that decision trees are only good for some kind of functions.
+\subsubsection{Pooling layers}
+The pooling layers is an other important part of the convolutional neural networks. They help prevent overfitting, by reducing the size of the input data using what is called max pooling, as shown in \autoref{fig:maxpooling}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.5]{fig/pooling_layer.jpeg}
+	\caption{Example of max pooling operation \cite{Karpathy2017}}
+	\label{fig:maxpooling}
+\end{figure}
 
-Links:
+\autoref{fig:maxpooling} presents a max pool with a 2x2 filter size, and a stride of 2, meaning that 2x2 pixels are compared and that the sliding window moves 2 pixels for each comparison. I practice this means that the 75\% of the activations from the previous layer is discarded.
 
+Links:\\
 https://www.pyimagesearch.com/2014/10/20/finding-shapes-images-using-python-opencv/\\
 https://www.pyimagesearch.com/2016/02/08/opencv-shape-detection/
 \\
 http://melvincabatuan.github.io/SLIC-Superpixels/
 \\
+https://www.gislounge.com/shadows-angles-measuring-object-heights-satellite-imagery/
+\\
+

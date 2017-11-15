@@ -7,6 +7,7 @@ A level-1 auxiliary file: acknowledgment.aux
 A level-1 auxiliary file: summary.aux
 A level-1 auxiliary file: chapter01.aux
 A level-1 auxiliary file: chapter_theoretical_background.aux
+A level-1 auxiliary file: chapter_related_work.aux
 A level-1 auxiliary file: chapter02.aux
 A level-1 auxiliary file: chapter0n.aux
 A level-1 auxiliary file: acronyms.aux
@@ -16,48 +17,49 @@ Database file #1: bib/prosjekt.bib
 Warning--I didn't find a database entry for "lundteigen08"
 Warning--I didn't find a database entry for "rausand14"
 Warning--I didn't find a database entry for "rausand04"
+Warning--empty journal in LeC
 Warning--empty publisher in Minsky1969
 Warning--empty publisher in Patterson2017
 Warning--empty publisher in Worboys2003
-You've used 9 entries,
+You've used 18 entries,
             1940 wiz_defined-function locations,
-            544 strings with 5020 characters,
-and the built_in function-call counts, 3256 in all, are:
-= -- 309
-> -- 128
-< -- 7
-+ -- 42
-- -- 42
-* -- 287
-:= -- 573
-add.period$ -- 22
-call.type$ -- 9
-change.case$ -- 63
-chr.to.int$ -- 9
-cite$ -- 12
-duplicate$ -- 125
-empty$ -- 224
-format.name$ -- 55
-if$ -- 619
+            599 strings with 6517 characters,
+and the built_in function-call counts, 6728 in all, are:
+= -- 656
+> -- 263
+< -- 14
++ -- 86
+- -- 86
+* -- 576
+:= -- 1169
+add.period$ -- 46
+call.type$ -- 18
+change.case$ -- 130
+chr.to.int$ -- 18
+cite$ -- 22
+duplicate$ -- 262
+empty$ -- 452
+format.name$ -- 112
+if$ -- 1298
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 43
-num.names$ -- 27
-pop$ -- 64
+missing$ -- 17
+newline$ -- 85
+num.names$ -- 54
+pop$ -- 123
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 133
 quote$ -- 0
-skip$ -- 99
+skip$ -- 216
 stack$ -- 0
-substring$ -- 213
-swap$ -- 23
-text.length$ -- 1
+substring$ -- 452
+swap$ -- 59
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
-warning$ -- 3
-while$ -- 27
+type$ -- 102
+warning$ -- 4
+while$ -- 58
 width$ -- 0
-write$ -- 104
-(There were 6 warnings)
+write$ -- 211
+(There were 7 warnings)

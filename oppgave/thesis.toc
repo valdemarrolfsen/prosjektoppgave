@@ -10,44 +10,61 @@
 \contentsline {section}{\numberline {1.6}Outline}{5}{section.1.6}
 \contentsline {chapter}{\numberline {2}Theoretical background}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Shape detection}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Shape detection using superpixels}{7}{subsection.2.1.1}
-\contentsline {subsubsection}{Simple Linear Iterative Clustering (SLIC)}{8}{section*.9}
-\contentsline {subsection}{\numberline {2.1.2}Artificial Neural Networks for shape detection}{9}{subsection.2.1.2}
-\contentsline {subsubsection}{Feed-forward neural networks}{9}{section*.10}
-\contentsline {paragraph}{Input Layer}{10}{section*.11}
-\contentsline {paragraph}{Hidden layer}{10}{section*.12}
-\contentsline {paragraph}{Output layer}{10}{section*.13}
-\contentsline {subsubsection}{Training a neural network}{10}{section*.14}
-\contentsline {subsubsection}{Backpropagation learning}{10}{section*.15}
-\contentsline {subsubsection}{Activation functions}{12}{section*.16}
-\contentsline {paragraph}{Linear}{12}{section*.17}
-\contentsline {paragraph}{Sigmoid}{12}{section*.18}
-\contentsline {paragraph}{Tanh (and Hard Tanh)}{12}{section*.19}
-\contentsline {paragraph}{Softmax}{12}{section*.20}
-\contentsline {paragraph}{ReLU}{12}{section*.21}
-\contentsline {subsubsection}{Loss functions}{13}{section*.22}
-\contentsline {paragraph}{Hinge loss}{13}{section*.23}
-\contentsline {paragraph}{Logistic loss}{13}{section*.24}
-\contentsline {subsubsection}{Hyperparamenters}{13}{section*.25}
-\contentsline {paragraph}{Learning rate}{14}{section*.26}
-\contentsline {paragraph}{Regularization}{14}{section*.27}
-\contentsline {paragraph}{Momentum}{14}{section*.28}
-\contentsline {paragraph}{Sparsity}{14}{section*.29}
-\contentsline {subsection}{\numberline {2.1.3}Support vector machines for shape recognition}{14}{subsection.2.1.3}
-\contentsline {chapter}{\numberline {3}Equations, etc}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Simple Equations}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Including Figures}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}Including Tables}{18}{section.3.3}
-\contentsline {section}{\numberline {3.4}Copying Figures and Tables}{20}{section.3.4}
-\contentsline {section}{\numberline {3.5}References to Figures and Tables}{20}{section.3.5}
-\contentsline {section}{\numberline {3.6}A Word About Font-encoding}{20}{section.3.6}
-\contentsline {section}{\numberline {3.7}Plagiarism}{21}{section.3.7}
-\contentsline {chapter}{\numberline {4}Conclusions}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Summary and Conclusions}{22}{section.4.1}
-\contentsline {section}{\numberline {4.2}Discussion}{22}{section.4.2}
-\contentsline {section}{\numberline {4.3}Recommendations for Further Work}{23}{section.4.3}
-\contentsline {chapter}{\numberline {A}Acronyms}{24}{appendix.A}
-\contentsline {chapter}{\numberline {B}What to put in appendixes}{25}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{25}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}More Details}{25}{subsection.B.1.1}
-\contentsline {chapter}{Bibliography}{26}{subsection.B.1.1}
+\contentsline {section}{\numberline {2.2}Shape detection using superpixels}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Simple Linear Iterative Clustering (SLIC)}{8}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Artificial Neural Networks}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Feed-forward neural networks}{9}{subsection.2.3.1}
+\contentsline {paragraph}{Input Layer}{10}{section*.9}
+\contentsline {paragraph}{Hidden layer}{10}{section*.10}
+\contentsline {paragraph}{Output layer}{10}{section*.11}
+\contentsline {subsection}{\numberline {2.3.2}Training a neural network}{10}{subsection.2.3.2}
+\contentsline {subsubsection}{Backpropagation learning}{10}{section*.12}
+\contentsline {subsection}{\numberline {2.3.3}Activation functions}{12}{subsection.2.3.3}
+\contentsline {paragraph}{Linear}{12}{section*.13}
+\contentsline {paragraph}{Sigmoid}{12}{section*.14}
+\contentsline {paragraph}{Tanh (and Hard Tanh)}{12}{section*.15}
+\contentsline {paragraph}{Softmax}{12}{section*.16}
+\contentsline {paragraph}{ReLU}{12}{section*.17}
+\contentsline {subsection}{\numberline {2.3.4}Loss functions}{13}{subsection.2.3.4}
+\contentsline {paragraph}{Hinge loss}{13}{section*.18}
+\contentsline {paragraph}{Logistic loss}{13}{section*.19}
+\contentsline {subsection}{\numberline {2.3.5}Hyperparamenters}{13}{subsection.2.3.5}
+\contentsline {paragraph}{Learning rate}{13}{section*.20}
+\contentsline {paragraph}{Regularization}{14}{section*.21}
+\contentsline {paragraph}{Momentum}{14}{section*.22}
+\contentsline {paragraph}{Sparsity}{14}{section*.23}
+\contentsline {subsection}{\numberline {2.3.6}Convolutional neural networks}{14}{subsection.2.3.6}
+\contentsline {subsubsection}{Biological Inspiration}{14}{section*.24}
+\contentsline {subsubsection}{Difference from regular feed-forward multilayer neural networks}{14}{section*.25}
+\contentsline {subsubsection}{Architecture}{15}{section*.26}
+\contentsline {subsubsection}{Convolutional layers}{16}{section*.27}
+\contentsline {subsubsection}{ReLU layers}{16}{section*.28}
+\contentsline {subsubsection}{Pooling layers}{17}{section*.29}
+\contentsline {chapter}{\numberline {3}Related Work}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Standard methods for shape detection}{18}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Simple Linear Iterative Clustering (SLIC)}{18}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}The development of Convolutional neural networks}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Early adaption of convolutional neural networks}{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Deep Convolutional Neural Networks}{19}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}ZF Net}{20}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}GoogLeNet}{20}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}VGGNet}{20}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}ResNet}{20}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Height estimation form a nadir perspective}{20}{section.3.3}
+\contentsline {chapter}{\numberline {4}Equations, etc}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simple Equations}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Including Figures}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Including Tables}{23}{section.4.3}
+\contentsline {section}{\numberline {4.4}Copying Figures and Tables}{25}{section.4.4}
+\contentsline {section}{\numberline {4.5}References to Figures and Tables}{25}{section.4.5}
+\contentsline {section}{\numberline {4.6}A Word About Font-encoding}{25}{section.4.6}
+\contentsline {section}{\numberline {4.7}Plagiarism}{26}{section.4.7}
+\contentsline {chapter}{\numberline {5}Conclusions}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Summary and Conclusions}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Discussion}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Recommendations for Further Work}{28}{section.5.3}
+\contentsline {chapter}{\numberline {A}Acronyms}{29}{appendix.A}
+\contentsline {chapter}{\numberline {B}What to put in appendixes}{30}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{30}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}More Details}{30}{subsection.B.1.1}
+\contentsline {chapter}{Bibliography}{31}{subsection.B.1.1}
