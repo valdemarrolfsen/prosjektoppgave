@@ -7,6 +7,16 @@ Achanta, R., Shaji, A., Smith, K., Lucchi, A., Fua, P., and S{\"{u}}sstrunk, S.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   34(11):2274--2281.
 
+\bibitem[\protect\astroncite{Airbus}{2017}]{Airbus2017}
+Airbus (2017).
+\newblock {Technical Information : TerraSAR-X}.
+
+\bibitem[\protect\astroncite{Brunner et~al.}{2008}]{Brunner2008}
+Brunner, D., Lemoine, G., and Bruzzone, L. (2008).
+\newblock {Building Height Retrieval From VHR SAR Imagery Based on an Iterative
+  Simulation and Matching Technique}.
+\newblock 7110(3):71100F--71100F--12.
+
 \bibitem[\protect\astroncite{Cambridge}{2017}]{Cambridge2017}
 Cambridge (2017).
 \newblock {Convolutional Neural Networks with Keras}.
@@ -14,6 +24,14 @@ Cambridge (2017).
 \bibitem[\protect\astroncite{Esa}{2009}]{Esa2009a}
 Esa (2009).
 \newblock {50 years of Earth Observation}.
+
+\bibitem[\protect\astroncite{Frossard}{2016}]{Frossard2016}
+Frossard, D. (2016).
+\newblock {VGG in TensorFlow}.
+
+\bibitem[\protect\astroncite{GISLounge}{2014}]{GISLounge2014}
+GISLounge (2014).
+\newblock {Measuring Object Heights from Satellite Imagery}.
 
 \bibitem[\protect\astroncite{Karpathy}{2017}]{Karpathy2017}
 Karpathy (2017).
@@ -63,9 +81,20 @@ Noh, H., Hong, S., and Han, B. (2015).
 Patterson, J. and Gibson, A. (2017).
 \newblock {\em {Deep Learning - A Practitioner's Approach}}.
 
+\bibitem[\protect\astroncite{Simonyan and Zisserman}{2014}]{Simonyan2014}
+Simonyan, K. and Zisserman, A. (2014).
+\newblock {Very Deep Convolutional Networks for Large-Scale Image Recognition}.
+\newblock pages 1--14.
+
 \bibitem[\protect\astroncite{Stanford}{2017}]{Stanford2017}
 Stanford (2017).
 \newblock {Sliding Windows - Stanford University}.
+
+\bibitem[\protect\astroncite{Szegedy et~al.}{2014}]{Szegedy2014}
+Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan, D.,
+  Vanhoucke, V., Rabinovich, A., Hill, C., and Arbor, A. (2014).
+\newblock {Going Deeper with Convolutions}.
+\newblock pages 1--9.
 
 \bibitem[\protect\astroncite{Worboys}{2003}]{Worboys2003}
 Worboys, M.~F. (2003).
@@ -75,6 +104,10 @@ Worboys, M.~F. (2003).
 Wu, S., Zhong, S., and Liu, Y. (2017).
 \newblock {Deep residual learning for image steganalysis}.
 \newblock {\em Multimedia Tools and Applications}, pages 1--17.
+
+\bibitem[\protect\astroncite{Yu et~al.}{2017}]{Yu2017}
+Yu, Z., Feng, C., Liu, M.-Y., and Ramalingam, S. (2017).
+\newblock {CASENet: Deep Category-Aware Semantic Edge Detection}.
 
 \bibitem[\protect\astroncite{Zeiler and Fergus}{2013}]{Zeiler2014}
 Zeiler, M.~D. and Fergus, R. (2013).

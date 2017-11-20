@@ -25,20 +25,6 @@ When constructing superpixels, there are some properties of the algorithm that a
 	\item When used for segmentation purposes, superpixels should both increase the speed and improve the quality of the results.
 \end{itemize}
 
-\cite{Achanta2012} proposes a superpixel-segmentation algorithm (SLIC), which in their opinion is best suited to meet these demands. They compare their algorithm to a variety of state-of-the-art superpixel methods, and conclude that none of the existing methods are satisfactory in regards to the points.
-
-\subsection{Simple Linear Iterative Clustering (SLIC)}
-The SLIC algorithm is fairly simple to understand. One of its key principles is that, by limiting the search space for each cluster center (points in the regular raster grid), it reduces the search speed significantly. This is achievable due to the fact that one of the primary goals of algorithm is to create a set of approximately equal sized superpixels. Thus, instead of searching the whole raster grid for each cluster center, the algorithm only has to search for edge pixels at a distance equal to D, as shown in \autoref{eq:distanceSuperpixel}.
-
-\begin{equation}
-	D'=\sqrt{\left(\frac{d_{c}}{m}\right)^{2} + \left(\frac{d_{s}}{S}\right)^{2}}
-	\label{eq:distanceSuperpixel}
-\end{equation}
-
-In \autoref{eq:distanceSuperpixel} $d_{c}$ is the euclidean distance between two pixels in terms of color and $d_{s}$ is the pixels euclidean, spatial distance. Furthermore, $S$ is the sampling interval of the cluster centers ($S = \sqrt{N/k}$, where N is the number of pixels in the grid and k is the desired number of superpixels) and $m$ is a fixed constant based on the color diversity in the image.
-
-Since the algorithm generates superpixels by clustering pixels based on their color and spatial proximity, creating a 5 dimensional, \textit{labxy} space, one would think that the distance could be found by simply taking the 5D euclidean distance. However, it turns out that for large superpixels, spatial distance outweigh the color proximity. Which is why the two distances $d_{c}$ and $d_{s}$ are weighted.
-
 \section{Artificial Neural Networks}
 In recent years, the development of machine learning, a branch of artificial intelligent systems, has become increasingly important in terms of pattern and object recognition in remote sensing and image analysis in general. One of the most commonly used approaches for data mining in remote sensing, has been artificial neural networks \cite{Lary2016}.
 
@@ -197,7 +183,7 @@ Such filters can for example be an edge kernel, which only passes through inform
 \subsubsection{ReLU layers}
 As seen in \autoref{fig:cnnarchitecture}, ReLU activation functions are often used in separate layers. This layer does not change the dimension of the input volume, but can change some of the pixel values.
 
-\subsubsection{Pooling layers}
+\subsubsection{Pooling layers}\label{section:pooling}
 The pooling layers is an other important part of the convolutional neural networks. They help prevent overfitting, by reducing the size of the input data using what is called max pooling, as shown in \autoref{fig:maxpooling}
 \begin{figure}[!h]
 	\centering
@@ -217,3 +203,83 @@ http://melvincabatuan.github.io/SLIC-Superpixels/
 https://www.gislounge.com/shadows-angles-measuring-object-heights-satellite-imagery/
 \\
 
+\section{Height estimation using satellite data}\label{section:theoreticheight}
+
+There are many different ways of estimating heights using satellite data, which involves using lidar data, SAR data and regular satellite multispectral imagery. This section will give the theoretical background for some of the most commonly used techniques.
+
+\subsection{Synthetic Aperture Radar (SAR)}
+The first technique involves using a Synthetic Aperture Radar on a moving platform, in this case a satellite. By sequentially transmitting electromagnetic waves onto the earths surface and collecting the reflected echos, the SAR satellites are able to collect high-precision, 3-dimensional data.
+
+One of the key advantages of the SAR satellites is that they take advantage of the fact that they are moving quickly. Since the transmission and reception occurs at different times, the platform has moved, thus creating a synthetic aperture that is much larger than the satellite antenna (see \autoref{fig:syntheticaperture}).
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.7]{fig/sar.jpg}
+	\caption{Concept of syntetic aperture \cite{Yu2012}}
+	\label{fig:syntheticaperture}
+\end{figure}
+
+The technique provides a finer spatial resolution to the collected data, making it possible to do height estimations with a sub-decimeter accuracy.
+
+\subsubsection{Interferometric synthetic aperture radar (InSAR)}
+While SAR makes use of amplitude and absolute phase of the returned signal, InSAR use a differential phase of the reflected signal, represented in what is called a phase image.
+
+Looking at a phase image completely isolated will not prove very useful, as it would appear visually random. This is because in practice, the phase of the return signal is affected by a lot of different factors, resulting in no apparent correlation between the pixels in the image.
+
+In order to get useful information these phase images, some of the factors, discussed above, has to be removed. The process of doing so is referred to as interferometry, and it uses two phase images taken from the exact same position in order to generate a interferogram (see \autoref{fig:interferogram}).
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{fig/inferiogram.png}
+	\caption{Generating an interferogram}
+	\label{fig:interferogram}
+\end{figure}
+
+Producing an inferiogram consists of multiple steps:
+
+\paragraph{Co-registration}
+Using a correlation function the two images are co-registered by finding the offset and difference in geometry between them.
+
+\paragraph{Re-sampling}
+In the re-sampling step, one of the images (referred to as the slave) is re-sampled in order to match the geometry of the other (called the master). What this means in practice is that each pixel represents the same area of ground in both images.
+
+\paragraph{Cross-multiplication and flattening}
+After re-sampling the images the inferiogram is generated by taking the cross product of each pixel, and the interferometric phase due to the curvature of the earth is removed (flattening).
+
+\paragraph{Filtering}
+Lastly, it is common to filter the basic inferiogram in order to amplify the phase signal, and to interpolate over phase jumps in order to produce a continuous deformation field.
+
+\subsection{Light Detection And Ranging (LIDAR)}
+Another high precision technique for generating height data using satellites is using LIDAR. LIDAR is a surveying method that uses a pulsed ultraviolet, visible of near infrared light laser to map an area or an object. In the same way as SAR and InSAR, it used the reflected signal to measure the distance from the transmitter to the object.
+
+\subsection{Height detection using shadows from imagery}
+For height estimation of specific objects, shadow estimations can be applied. This technique uses a high resolution image, as well as knowledge about the position of the sun, the position of the image projection center and the length of the projected shadow in order to estimate an objects height (\autoref{fig:heightestimation}).
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.5]{fig/height_estimation.png}
+	\caption{Height estimation of Burj Khalifa using shadow estimation \citep{GISLounge2014}}
+	\label{fig:heightestimation}
+\end{figure}
+
+Looking at \autoref{fig:heightestimation} the height of the object can be found by:
+
+\begin{equation}
+	tan(\mu) = \frac{H_{object}}{L_{shadow}} \quad \Rightarrow \quad L_{shadow} = \frac{H_{object}}{tan(\mu)}
+\end{equation}
+
+Since the satellite image rarely is taken with the projection center directly above the object (nadir angle = 0\textdegree), the blocked length of the shadow has to be estimated. Since the height of the object is the unknown, estimating the blocked length of the shadow is an iterative process, where a new calculated, temporary value for the height is used in each iteration. Calculating the length of the blocked shadow is also very straight forward: 
+
+\begin{equation}\label{eq:blockedshadow}
+	tan(90 - \lambda) = \frac{L_{blockedshadow}}{H_{object}} \quad \Rightarrow \quad L_{blockedshadow} = H_{object}*tan(90-\lambda)
+\end{equation}
+
+In \autoref{eq:blockedshadow} 90-$\lambda$ defined as the Off-nadir angle.
+
+It is important to remember that if this technique shall produce exact results, some parameters has to be known in the moment of the capture:
+
+\begin{itemize}
+	\item The position of the satellite
+	\item The time
+	\item The position of the object with the unknown height
+\end{itemize}

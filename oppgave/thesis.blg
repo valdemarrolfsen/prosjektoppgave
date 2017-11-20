@@ -17,49 +17,54 @@ Database file #1: bib/prosjekt.bib
 Warning--I didn't find a database entry for "lundteigen08"
 Warning--I didn't find a database entry for "rausand14"
 Warning--I didn't find a database entry for "rausand04"
+Warning--I didn't find a database entry for "Yu2012"
+Warning--empty journal in Brunner2008
 Warning--empty journal in LeC
 Warning--empty publisher in Minsky1969
 Warning--empty publisher in Patterson2017
+Warning--empty journal in Simonyan2014
+Warning--empty journal in Szegedy2014
 Warning--empty publisher in Worboys2003
-You've used 18 entries,
+Warning--empty journal in Yu2017
+You've used 25 entries,
             1940 wiz_defined-function locations,
-            599 strings with 6517 characters,
-and the built_in function-call counts, 6728 in all, are:
-= -- 656
-> -- 263
-< -- 14
-+ -- 86
-- -- 86
-* -- 576
-:= -- 1169
-add.period$ -- 46
-call.type$ -- 18
-change.case$ -- 130
-chr.to.int$ -- 18
-cite$ -- 22
-duplicate$ -- 262
-empty$ -- 452
-format.name$ -- 112
-if$ -- 1298
+            634 strings with 7473 characters,
+and the built_in function-call counts, 9458 in all, are:
+= -- 918
+> -- 396
+< -- 20
++ -- 132
+- -- 132
+* -- 815
+:= -- 1650
+add.period$ -- 63
+call.type$ -- 25
+change.case$ -- 188
+chr.to.int$ -- 25
+cite$ -- 33
+duplicate$ -- 357
+empty$ -- 615
+format.name$ -- 167
+if$ -- 1812
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 85
-num.names$ -- 54
-pop$ -- 123
+missing$ -- 21
+newline$ -- 116
+num.names$ -- 75
+pop$ -- 180
 preamble$ -- 1
-purify$ -- 133
+purify$ -- 191
 quote$ -- 0
-skip$ -- 216
+skip$ -- 296
 stack$ -- 0
-substring$ -- 452
-swap$ -- 59
-text.length$ -- 4
+substring$ -- 627
+swap$ -- 76
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 102
-warning$ -- 4
-while$ -- 58
+type$ -- 144
+warning$ -- 8
+while$ -- 81
 width$ -- 0
-write$ -- 211
-(There were 7 warnings)
+write$ -- 287
+(There were 12 warnings)

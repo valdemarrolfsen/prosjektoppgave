@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.24)  15 NOV 2017 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.24)  19 NOV 2017 14:30
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**thesis.tex
-(./thesis.tex
+**/Users/valdemarrolfsen/Documents/prosjektoppgave/oppgave/thesis.tex
+(/Users/valdemarrolfsen/Documents/prosjektoppgave/oppgave/thesis.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/report.cls
@@ -894,61 +895,67 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/usr/local/texlive/2017/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(./thesis.aux (./front.aux) (./preface.aux) (./acknowledgment.aux)
-(./summary.aux) (./chapter01.aux) (./chapter_theoretical_background.aux
+(/usr/local/texlive/2017/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+) (./thesis.aux
+(./front.aux) (./preface.aux) (./acknowledgment.aux) (./summary.aux)
+(./chapter01.aux) (./chapter_theoretical_background.aux
 
 LaTeX Warning: Label `fig:cnnarchitecture' multiply defined.
 
-) (./chapter_related_work.aux) (./chapter02.aux) (./chapter0n.aux)
-(./acronyms.aux) (./appendix-b.aux))
+) (./chapter_related_work.aux
+
+LaTeX Warning: Label `fig:inception' multiply defined.
+
+) (./chapter02.aux) (./chapter0n.aux) (./acronyms.aux) (./appendix-b.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 21.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 22.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 22.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 22.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 22.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 21.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 22.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -1026,7 +1033,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 21.
+Package hyperref Info: Link coloring ON on input line 22.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1036,14 +1043,25 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count126
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/futs/m/n --> TS1/futs/bx/n on input line 22.
+Package gensymb Info: Math companion symbols declared on input line 22.
+LaTeX Info: Redefining \degree on input line 22.
+LaTeX Info: Redefining \celsius on input line 22.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 22.
+LaTeX Info: Redefining \ohm on input line 22.
+Package gensymb Info: Using \textohm for \ohm on input line 22.
+Package gensymb Info: Using \textmu for \micro on input line 22.
 \openout2 = `front.aux'.
 
  (./front.tex
@@ -1086,7 +1104,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 29.
  (./thesis.toc
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 1.
 
@@ -1106,6 +1124,11 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 1.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 1.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 1.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
+)
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 4.
  [4
@@ -1119,7 +1142,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 \include{chapter01}
+l.32 \include{chapter01}
                          [1]
 \openout2 = `chapter01.aux'.
 
@@ -1133,11 +1156,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--36
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 40.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-)
 
 Package natbib Warning: Citation `lundteigen08' on page 3 undefined on input li
 ne 40.
@@ -1198,7 +1216,7 @@ Overfull \hbox (0.8802pt too wide) in paragraph at lines 6--7
  clas-si-cal prob-lem for decades. There
  []
 
-<fig/superpixels.png, id=326, 803.0pt x 604.2575pt>
+<fig/superpixels.png, id=331, 803.0pt x 604.2575pt>
 File: fig/superpixels.png Graphic file (type png)
  <use fig/superpixels.png>
 Package pdftex.def Info: fig/superpixels.png used on input line 15.
@@ -1208,69 +1226,145 @@ Package pdftex.def Info: fig/superpixels.png used on input line 15.
 
 
 
-] [8 <./fig/superpixels.png>] [9] [10]
-<fig/backpropagation_two_layers.png, id=376, 148.3944pt x 211.0284pt>
+] [8 <./fig/superpixels.png>] [9]
+<fig/backpropagation_two_layers.png, id=369, 148.3944pt x 211.0284pt>
 File: fig/backpropagation_two_layers.png Graphic file (type png)
 
 <use fig/backpropagation_two_layers.png>
 Package pdftex.def Info: fig/backpropagation_two_layers.png used on input line 
-93.
+79.
 (pdftex.def)             Requested size: 148.39403pt x 211.02788pt.
- [11 <./fig/backpropagation_two_layers.png>] [12]
 
-LaTeX Warning: Reference `section:svm' on page 13 undefined on input line 124.
 
-[13] [14]
-Overfull \hbox (4.5602pt too wide) in paragraph at lines 157--158
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10] [11 <./fig/backpropagation_two_layers.png>]
+
+LaTeX Warning: Reference `section:svm' on page 12 undefined on input line 110.
+
+[12] [13]
+Overfull \hbox (4.5602pt too wide) in paragraph at lines 143--144
 []\T1/futs/m/n/12 Convolutional neu-ral net-works solve this is-sue by rep-re-s
 ent-ing the im-ages in a three-dimensional
  []
 
-<fig/cnn_architecture.png, id=424, 717.6411pt x 370.2633pt>
+<fig/cnn_architecture.png, id=417, 717.6411pt x 370.2633pt>
 File: fig/cnn_architecture.png Graphic file (type png)
 
 <use fig/cnn_architecture.png>
-Package pdftex.def Info: fig/cnn_architecture.png used on input line 172.
+Package pdftex.def Info: fig/cnn_architecture.png used on input line 158.
 (pdftex.def)             Requested size: 430.58798pt x 222.15968pt.
- [15 <./fig/cnn_architecture.png>]
-<fig/kernel_filter.png, id=441, 164.25pt x 77.307pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14] <fig/kernel_filter.png, id=434, 164.25pt x 77.307pt>
 File: fig/kernel_filter.png Graphic file (type png)
 
 <use fig/kernel_filter.png>
-Package pdftex.def Info: fig/kernel_filter.png used on input line 192.
+Package pdftex.def Info: fig/kernel_filter.png used on input line 178.
 (pdftex.def)             Requested size: 246.37437pt x 115.96019pt.
 
-<fig/pooling_layer.jpeg, id=446, 789.95125pt x 369.38pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig/pooling_layer.jpeg, id=439, 789.95125pt x 369.38pt>
 File: fig/pooling_layer.jpeg Graphic file (type jpg)
 
 <use fig/pooling_layer.jpeg>
-Package pdftex.def Info: fig/pooling_layer.jpeg used on input line 204.
+Package pdftex.def Info: fig/pooling_layer.jpeg used on input line 190.
 (pdftex.def)             Requested size: 394.97466pt x 184.68954pt.
- [16 <./fig/kernel_filter.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 211--219
+ [15 <./fig/cnn_architecture.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--205
 
  []
 
-) [17 <./fig/pooling_layer.jpeg>]
+[16 <./fig/kernel_filter.png> <./fig/pooling_layer.jpeg>]
+<fig/sar.jpg, id=465, 407.5225pt x 265.99374pt>
+File: fig/sar.jpg Graphic file (type jpg)
+ <use fig/sar.jpg>
+Package pdftex.def Info: fig/sar.jpg used on input line 217.
+(pdftex.def)             Requested size: 285.2638pt x 186.19434pt.
+
+
+Package natbib Warning: Citation `Yu2012' on page 17 undefined on input line 21
+8.
+
+[17 <./fig/sar.jpg>] <fig/inferiogram.png, id=474, 1031.855pt x 401.5pt>
+File: fig/inferiogram.png Graphic file (type png)
+
+<use fig/inferiogram.png>
+Package pdftex.def Info: fig/inferiogram.png used on input line 233.
+(pdftex.def)             Requested size: 412.73468pt x 160.59715pt.
+ [18 <./fig/inferiogram.png>]
+<fig/height_estimation.png, id=486, 602.25pt x 398.48875pt>
+File: fig/height_estimation.png Graphic file (type png)
+
+<use fig/height_estimation.png>
+Package pdftex.def Info: fig/height_estimation.png used on input line 260.
+(pdftex.def)             Requested size: 301.12425pt x 199.24388pt.
+ [19 <./fig/height_estimation.png>]) [20]
 \openout2 = `chapter_related_work.aux'.
 
- (./chapter_related_work.tex
+
+(./chapter_related_work.tex
 Chapter 3.
-[18
+[21
 
 
 
-] <fig/deconv.png, id=489, 958.58125pt x 270.00874pt>
+] [22] <fig/deconv.png, id=537, 958.58125pt x 270.00874pt>
 File: fig/deconv.png Graphic file (type png)
- <use fig/deconv.png>
-Package pdftex.def Info: fig/deconv.png used on input line 24.
+
+<use fig/deconv.png>
+Package pdftex.def Info: fig/deconv.png used on input line 37.
 (pdftex.def)             Requested size: 479.28946pt x 135.00403pt.
 
-Overfull \hbox (7.25822pt too wide) in paragraph at lines 24--25
+Overfull \hbox (7.25822pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-) [19 <./fig/deconv.png>] [20]
+[23 <./fig/deconv.png>]
+<fig/inception_layer.png, id=560, 638.385pt x 685.56125pt>
+File: fig/inception_layer.png Graphic file (type png)
+
+<use fig/inception_layer.png>
+Package pdftex.def Info: fig/inception_layer.png used on input line 59.
+(pdftex.def)             Requested size: 319.19171pt x 342.77979pt.
+ [24 <./fig/inception_layer.png>]
+<fig/vgg16.png, id=574, 471.7625pt x 277.035pt>
+File: fig/vgg16.png Graphic file (type png)
+ <use fig/vgg16.png>
+Package pdftex.def Info: fig/vgg16.png used on input line 73.
+(pdftex.def)             Requested size: 330.23149pt x 193.92317pt.
+
+<fig/degradation.png, id=578, 873.2625pt x 312.16624pt>
+File: fig/degradation.png Graphic file (type png)
+
+<use fig/degradation.png>
+Package pdftex.def Info: fig/degradation.png used on input line 85.
+(pdftex.def)             Requested size: 436.63017pt x 156.08273pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25 <./fig/vgg16.png (PNG copy)>]
+<fig/shortcut_connection.png, id=595, 635.37375pt x 357.335pt>
+File: fig/shortcut_connection.png Graphic file (type png)
+
+<use fig/shortcut_connection.png>
+Package pdftex.def Info: fig/shortcut_connection.png used on input line 108.
+(pdftex.def)             Requested size: 317.6861pt x 178.66705pt.
+ [26 <./fig/degradation.png> <./fig/shortcut_connection.png>]
+<fig/casenet_edge_detection.png, id=616, 609.27625pt x 590.205pt>
+File: fig/casenet_edge_detection.png Graphic file (type png)
+
+<use fig/casenet_edge_detection.png>
+Package pdftex.def Info: fig/casenet_edge_detection.png used on input line 123.
+
+(pdftex.def)             Requested size: 243.70618pt x 236.0778pt.
+ [27 <./fig/casenet_edge_detection.png>])
+[28]
 \openout2 = `chapter02.aux'.
 
  (./chapter02.tex
@@ -1285,7 +1379,7 @@ uts/m/n/12 (\FMS/futm/m/n/12 ^^@\FML/futmi/m/it/12 ^^Ux\T1/futs/m/n/12 ) \FML/f
 utmi/m/it/12 dx$\T1/futs/m/n/12 ,
  []
 
-[21
+[29
 
 
 
@@ -1296,12 +1390,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
-<fig/NTNU.pdf, id=515, 241.90375pt x 53.19875pt>
+<fig/NTNU.pdf, id=644, 241.90375pt x 53.19875pt>
 File: fig/NTNU.pdf Graphic file (type pdf)
  <use fig/NTNU.pdf>
 Package pdftex.def Info: fig/NTNU.pdf used on input line 64.
 (pdftex.def)             Requested size: 145.14336pt x 31.91948pt.
- [22]
+ [30]
 File: fig/NTNU.pdf Graphic file (type pdf)
 
 <use fig/NTNU.pdf>
@@ -1322,35 +1416,35 @@ raphics \T1/futs/m/n/12 for fig-ures, and above the com-mand $\FMS/futm/m/n/12
 n$\T1/cmtt/m/n/12 begin{tabular*}
  []
 
-[23 <./fig/NTNU.pdf>] [24]
+[31 <./fig/NTNU.pdf>] [32]
 
-Package natbib Warning: Citation `rausand04' on page 25 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 33 undefined on input line
  110.
 
 
-Package natbib Warning: Citation `rausand04' on page 25 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 33 undefined on input line
  112.
 
-[25]
+[33]
 
-Package natbib Warning: Citation `rausand04' on page 26 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 34 undefined on input line
  135.
 
-) [26]
+) [34]
 \openout2 = `chapter0n.aux'.
 
  (./chapter0n.tex
 Chapter 5.
-[27
+[35
 
 
 
-]) [28]
+]) [36]
 \openout2 = `acronyms.aux'.
 
  (./acronyms.tex
 Appendix A.
-) [29
+) [37
 
 
 
@@ -1359,28 +1453,28 @@ Appendix A.
 
  (./appendix-b.tex
 Appendix B.
-) [30
+) [38
 
 
 
-] (./thesis.bbl [31
+] (./thesis.bbl [39
 
 
 ])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
-[32]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+[40]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./thesis.aux (./front.aux) (./preface.aux) (./acknowledgment.aux)
 (./summary.aux) (./chapter01.aux) (./chapter_theoretical_background.aux)
 (./chapter_related_work.aux) (./chapter02.aux) (./chapter0n.aux)
 (./acronyms.aux) (./appendix-b.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7AD7DDCB090E0524ED675D3382581956;3261.
+(rerunfilecheck)             Checksum: 892EBC826BC301A17DF844B7BE2192A1;3476.
 
 
 LaTeX Warning: There were undefined references.
@@ -1388,16 +1482,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 8758 strings out of 492995
- 122320 string characters out of 6132703
- 213965 words of memory out of 5000000
- 11876 multiletter control sequences out of 15000+600000
- 115231 words of font info for 121 fonts, out of 8000000 for 9000
+ 8937 strings out of 492995
+ 125315 string characters out of 6132703
+ 216081 words of memory out of 5000000
+ 11992 multiletter control sequences out of 15000+600000
+ 119820 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,10n,34p,980b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,10n,34p,1037b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/tex
@@ -1410,10 +1504,10 @@ ve/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2017
 onts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/adobe/utopia/putri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (37 pages, 1847660 bytes).
+Output written on thesis.pdf (45 pages, 3842177 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 591 compressed objects within 6 object streams
- 158 named destinations out of 1000 (max. 500000)
- 428 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 798 PDF objects out of 1000 (max. 8388607)
+ 704 compressed objects within 8 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 476 words of extra memory for PDF output out of 10000 (max. 10000000)
 
