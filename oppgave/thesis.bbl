@@ -11,6 +11,11 @@ Achanta, R., Shaji, A., Smith, K., Lucchi, A., Fua, P., and S{\"{u}}sstrunk, S.
 Airbus (2017).
 \newblock {Technical Information : TerraSAR-X}.
 
+\bibitem[\protect\astroncite{Ballard}{1981}]{Ballard1981}
+Ballard, D.~H. (1981).
+\newblock {Generalizing the Hough Transform To Detect Arbitrary Shapes*}.
+\newblock {\em Pattern Recoqnition}, 13(2):111--122.
+
 \bibitem[\protect\astroncite{Brunner et~al.}{2008}]{Brunner2008}
 Brunner, D., Lemoine, G., and Bruzzone, L. (2008).
 \newblock {Building Height Retrieval From VHR SAR Imagery Based on an Iterative
@@ -24,6 +29,10 @@ Cambridge (2017).
 \bibitem[\protect\astroncite{Esa}{2009}]{Esa2009a}
 Esa (2009).
 \newblock {50 years of Earth Observation}.
+
+\bibitem[\protect\astroncite{Fisher et~al.}{2003}]{Fisher2003}
+Fisher, R., Perkins, S., Walker, A., and Wolfard, E. (2003).
+\newblock {Image Transforms - Hough Transform}.
 
 \bibitem[\protect\astroncite{Frossard}{2016}]{Frossard2016}
 Frossard, D. (2016).
@@ -56,6 +65,12 @@ Lary, D.~J., Alavi, A.~H., Gandomi, A.~H., and Walker, A.~L. (2016).
 \bibitem[\protect\astroncite{{Le Cun} et~al.}{1998}]{LeC}
 {Le Cun}, Y., Bottou, L., Bengio, Y., and Haffner, P. (1998).
 \newblock {Gradient-Based Learning Applied to Document Recognition}.
+
+\bibitem[\protect\astroncite{Liu et~al.}{2015}]{Liu2015}
+Liu, W., Suzuki, K., and Yamazaki, F. (2015).
+\newblock {Height estimation for high-rise buildings based on InSAR analysis}.
+\newblock {\em 2015 Joint Urban Remote Sensing Event, JURSE 2015}, (June
+  2010):1--4.
 
 \bibitem[\protect\astroncite{Mcculloch and Pitts}{1943}]{Mcculloch1990}
 Mcculloch, W.~S. and Pitts, W. (1943).

@@ -3,6 +3,11 @@
 \section{Standard methods for shape detection}
 Before looking at the use of neural networks for shape recognition in images, some more standard approaches are presented.
 
+\subsection{Shape detection using the Hough Transform}
+Shape detection and feature extraction in images, using Hough Transforms has been a subject of research for many years. The algorithm was first popularized in computer vision in 1981 by \cite{Ballard1981} which applied a generalized version of the algorithm in order to detect of curves in gray scale images.
+
+The article describes how boundary detection plays a crucial role for feature extraction in images, and how a generalized Hough algorithm can use edge information to define a mapping from the orientation of an edge point to a reference point related to the shape.
+
 \subsection{Simple Linear Iterative Clustering (SLIC)}
 \cite{Achanta2012} proposes a superpixel-segmentation algorithm (SLIC), which in their opinion is best suited to meet these demands. They compare their algorithm to a variety of state-of-the-art superpixel methods, and conclude that none of the existing methods are satisfactory in regards to the points.
 
@@ -133,7 +138,34 @@ The proposed CASENet is a modification of the ResNet-101, with some modification
 As seen in \autoref{section:theoreticheight} there are many different techniques that can be applied in order to estimate the height of a building. This section will focus on different attempts to retrieve height data, using satellite imagery.
 
 \subsection{Building height retrieval from VHR SAR Imagery}
-After the launch of TerraSAR-X in 2007, a satellite that was designed to acquire high-resolution X-band radar images of the entire planet, it was possible to gather SAR data with a resolution of down to 1 meter \citep{Airbus2017}.
+After the launch of TerraSAR-X in 2007, a satellite that was designed to acquire high-resolution X-band radar images of the entire planet, it was possible to gather SAR data with a resolution of down to 1 meter \citep{Airbus2017}. In contrast to other optical, spaceborne sensors, such as Ikonos, Quickbird and WorldView, satellites using SAR overcome the difficulties of weather conditions and lack of sun illumination.
 
-Using the SAR images provided by the satellite \cite{Brunner2008} was able to estimate the height of man-made structures with a sub-meter precision using a matching procedure. The basic principle is that using a optimization algorithm, the height of a building is found by testing different height hypothesis against a single SAR image. The estimation is done without modeling its exact radiometry, since this would require extensive apriori knowledge about the roughness parameters and dielectric constants of the surfaces.
+Using the SAR images provided by the satellite \cite{Brunner2008} was able to estimate the height of man-made structures with a sub-meter precision by automatically reconstruct 3-D models, using a "hypothesis generation-rendering-matching" procedure. The basic principle was that using a optimization algorithm, the height of a building is found by testing different height hypothesis against a single SAR image. The estimation is done without modeling its exact radiometry, since this would require extensive apriori knowledge about the roughness parameters and dielectric constants of the surfaces. Generating this height model becomes an optimization problem \autoref{eq:optimizationproblem}.
 
+\begin{equation}
+	\hat{h} = arg \underset{h,\overrightarrow{s}}{max}\left\{M\left[\hat{X}_{\overrightarrow{s}}(\overrightarrow{H}),X\right]\right\}
+	\label{eq:optimizationproblem}
+\end{equation}
+
+In \autoref{eq:optimizationproblem} X is the true SAR image, $\hat{X}$ is the simulated SAR image at height h, M is the matching function, and $\overrightarrow{H}$ is the simulated hypothesis.
+
+\cite{Brunner2008} tested their method on different types of buildings, where flat buildings gave a mean accuracy of $0.3 \pm 2.1 m$. 
+
+\subsection{Height estimation from InSAR analysis}
+Another approach for height detection using SAR satellites, is interferometric SAR (InSAR) analysis, as attempted by \cite{Liu2015}. In their paper they used images taken on December 5 and 27, 2007 in order to generate an interferiogram over San Francisco. The technique was based on extracting potential layover areas from the interferiogram and use these areas to measure the height of the buildings using the relationship between the height of an object and the layover observed in the interferiogram (\autoref{eq:layoverheight}).
+
+\begin{equation}
+	\Delta\Phi=\frac{4 \pi B_{N}}{\lambda H sin{\theta}}\Delta R
+	\label{eq:layoverheight}
+\end{equation}
+
+In \autoref{eq:layoverheight} $\Delta\Phi$ is the phase difference within one pixel in the layover area, $B_{N}$ is the perpendicular baseline distance, $\lambda$ is the radar wavelength, H is the satellite altitude and $\theta$ is the angle of incidence (see \autoref{fig:insar}).
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{fig/insar.png}
+	\caption{A schematic image of geometrical characteristics for a building in a slant-range SAR image \citep{Liu2015}}
+	\label{fig:insar}
+\end{figure}
+
+Using this method \cite{Liu2015} were able to estimate the height of high-rise buildings in a crowded area with a RMS of 13m and an average difference between detected results and the reference values of 6.6m.

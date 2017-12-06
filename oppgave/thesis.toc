@@ -10,75 +10,78 @@
 \contentsline {section}{\numberline {1.6}Outline}{5}{section.1.6}
 \contentsline {chapter}{\numberline {2}Theoretical background}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Shape detection}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}Shape detection using superpixels}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Artificial Neural Networks}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Feed-forward neural networks}{9}{subsection.2.3.1}
-\contentsline {paragraph}{Input Layer}{9}{section*.9}
-\contentsline {paragraph}{Hidden layer}{9}{section*.10}
-\contentsline {paragraph}{Output layer}{9}{section*.11}
-\contentsline {subsection}{\numberline {2.3.2}Training a neural network}{9}{subsection.2.3.2}
-\contentsline {subsubsection}{Backpropagation learning}{10}{section*.12}
-\contentsline {subsection}{\numberline {2.3.3}Activation functions}{10}{subsection.2.3.3}
-\contentsline {paragraph}{Linear}{11}{section*.13}
-\contentsline {paragraph}{Sigmoid}{11}{section*.14}
-\contentsline {paragraph}{Tanh (and Hard Tanh)}{11}{section*.15}
-\contentsline {paragraph}{Softmax}{11}{section*.16}
-\contentsline {paragraph}{ReLU}{12}{section*.17}
-\contentsline {subsection}{\numberline {2.3.4}Loss functions}{12}{subsection.2.3.4}
-\contentsline {paragraph}{Hinge loss}{12}{section*.18}
-\contentsline {paragraph}{Logistic loss}{12}{section*.19}
-\contentsline {subsection}{\numberline {2.3.5}Hyperparamenters}{13}{subsection.2.3.5}
-\contentsline {paragraph}{Learning rate}{13}{section*.20}
-\contentsline {paragraph}{Regularization}{13}{section*.21}
-\contentsline {paragraph}{Momentum}{13}{section*.22}
-\contentsline {paragraph}{Sparsity}{13}{section*.23}
-\contentsline {subsection}{\numberline {2.3.6}Convolutional neural networks}{13}{subsection.2.3.6}
-\contentsline {subsubsection}{Biological Inspiration}{13}{section*.24}
-\contentsline {subsubsection}{Difference from regular feed-forward multilayer neural networks}{14}{section*.25}
-\contentsline {subsubsection}{Architecture}{14}{section*.26}
-\contentsline {subsubsection}{Convolutional layers}{15}{section*.27}
-\contentsline {subsubsection}{ReLU layers}{15}{section*.28}
-\contentsline {subsubsection}{Pooling layers}{16}{section*.29}
-\contentsline {section}{\numberline {2.4}Height estimation using satellite data}{17}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Synthetic Aperture Radar (SAR)}{17}{subsection.2.4.1}
-\contentsline {subsubsection}{Interferometric synthetic aperture radar (InSAR)}{17}{section*.30}
-\contentsline {paragraph}{Co-registration}{18}{section*.31}
-\contentsline {paragraph}{Re-sampling}{18}{section*.32}
-\contentsline {paragraph}{Cross-multiplication and flattening}{18}{section*.33}
-\contentsline {paragraph}{Filtering}{18}{section*.34}
-\contentsline {subsection}{\numberline {2.4.2}Light Detection And Ranging (LIDAR)}{19}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Height detection using shadows from imagery}{19}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Related Work}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}Standard methods for shape detection}{21}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Simple Linear Iterative Clustering (SLIC)}{21}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}The development of Convolutional neural networks}{22}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Early adaption of convolutional neural networks}{22}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Deep Convolutional Neural Networks}{22}{subsection.3.2.2}
-\contentsline {paragraph}{Unpooling}{23}{section*.35}
-\contentsline {paragraph}{Rectification}{23}{section*.36}
-\contentsline {paragraph}{Filtering}{23}{section*.37}
-\contentsline {subsubsection}{GoogLeNet}{23}{section*.38}
-\contentsline {subsubsection}{VGGNet}{25}{section*.39}
-\contentsline {subsubsection}{ResNet}{25}{section*.40}
-\contentsline {paragraph}{Residual mapping}{26}{section*.41}
-\contentsline {paragraph}{Shortcut connections}{26}{section*.42}
-\contentsline {section}{\numberline {3.3}Shape detection using convolution neural networks}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}Height estimation form a nadir perspective}{28}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Building height retrieval from VHR SAR Imagery}{28}{subsection.3.4.1}
-\contentsline {chapter}{\numberline {4}Equations, etc}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simple Equations}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Including Figures}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}Including Tables}{31}{section.4.3}
-\contentsline {section}{\numberline {4.4}Copying Figures and Tables}{33}{section.4.4}
-\contentsline {section}{\numberline {4.5}References to Figures and Tables}{33}{section.4.5}
-\contentsline {section}{\numberline {4.6}A Word About Font-encoding}{33}{section.4.6}
-\contentsline {section}{\numberline {4.7}Plagiarism}{34}{section.4.7}
-\contentsline {chapter}{\numberline {5}Conclusions}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Summary and Conclusions}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Discussion}{35}{section.5.2}
-\contentsline {section}{\numberline {5.3}Recommendations for Further Work}{36}{section.5.3}
-\contentsline {chapter}{\numberline {A}Acronyms}{37}{appendix.A}
-\contentsline {chapter}{\numberline {B}What to put in appendixes}{38}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{38}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}More Details}{38}{subsection.B.1.1}
-\contentsline {chapter}{Bibliography}{39}{subsection.B.1.1}
+\contentsline {subsection}{\numberline {2.1.1}The Hough transform}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Shape detection using superpixels}{9}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Artificial Neural Networks}{10}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Feed-forward neural networks}{10}{subsection.2.2.1}
+\contentsline {paragraph}{Input Layer}{10}{section*.9}
+\contentsline {paragraph}{Hidden layer}{10}{section*.10}
+\contentsline {paragraph}{Output layer}{10}{section*.11}
+\contentsline {subsection}{\numberline {2.2.2}Training a neural network}{11}{subsection.2.2.2}
+\contentsline {subsubsection}{Backpropagation learning}{11}{section*.12}
+\contentsline {subsection}{\numberline {2.2.3}Activation functions}{12}{subsection.2.2.3}
+\contentsline {paragraph}{Linear}{12}{section*.13}
+\contentsline {paragraph}{Sigmoid}{12}{section*.14}
+\contentsline {paragraph}{Tanh (and Hard Tanh)}{13}{section*.15}
+\contentsline {paragraph}{Softmax}{13}{section*.16}
+\contentsline {paragraph}{ReLU}{13}{section*.17}
+\contentsline {subsection}{\numberline {2.2.4}Loss functions}{13}{subsection.2.2.4}
+\contentsline {paragraph}{Hinge loss}{14}{section*.18}
+\contentsline {paragraph}{Logistic loss}{14}{section*.19}
+\contentsline {subsection}{\numberline {2.2.5}Hyperparamenters}{14}{subsection.2.2.5}
+\contentsline {paragraph}{Learning rate}{14}{section*.20}
+\contentsline {paragraph}{Regularization}{14}{section*.21}
+\contentsline {paragraph}{Momentum}{14}{section*.22}
+\contentsline {paragraph}{Sparsity}{15}{section*.23}
+\contentsline {subsection}{\numberline {2.2.6}Convolutional neural networks}{15}{subsection.2.2.6}
+\contentsline {subsubsection}{Biological Inspiration}{15}{section*.24}
+\contentsline {subsubsection}{Difference from regular feed-forward multilayer neural networks}{15}{section*.25}
+\contentsline {subsubsection}{Architecture}{16}{section*.26}
+\contentsline {subsubsection}{Convolutional layers}{16}{section*.27}
+\contentsline {subsubsection}{ReLU layers}{17}{section*.28}
+\contentsline {subsubsection}{Pooling layers}{17}{section*.29}
+\contentsline {section}{\numberline {2.3}Height estimation using remote sensing}{18}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Synthetic Aperture Radar (SAR)}{18}{subsection.2.3.1}
+\contentsline {subsubsection}{Interferometric synthetic aperture radar (InSAR)}{19}{section*.30}
+\contentsline {paragraph}{Co-registration}{19}{section*.31}
+\contentsline {paragraph}{Re-sampling}{20}{section*.32}
+\contentsline {paragraph}{Cross-multiplication and flattening}{20}{section*.33}
+\contentsline {paragraph}{Filtering}{20}{section*.34}
+\contentsline {subsection}{\numberline {2.3.2}Light Detection And Ranging (LIDAR)}{20}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Height detection using shadows from imagery}{20}{subsection.2.3.3}
+\contentsline {chapter}{\numberline {3}Related Work}{22}{chapter.3}
+\contentsline {section}{\numberline {3.1}Standard methods for shape detection}{22}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Shape detection using the Hough Transform}{22}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Simple Linear Iterative Clustering (SLIC)}{22}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}The development of Convolutional neural networks}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Early adaption of convolutional neural networks}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Deep Convolutional Neural Networks}{24}{subsection.3.2.2}
+\contentsline {paragraph}{Unpooling}{24}{section*.35}
+\contentsline {paragraph}{Rectification}{24}{section*.36}
+\contentsline {paragraph}{Filtering}{25}{section*.37}
+\contentsline {subsubsection}{GoogLeNet}{25}{section*.38}
+\contentsline {subsubsection}{VGGNet}{26}{section*.39}
+\contentsline {subsubsection}{ResNet}{26}{section*.40}
+\contentsline {paragraph}{Residual mapping}{27}{section*.41}
+\contentsline {paragraph}{Shortcut connections}{27}{section*.42}
+\contentsline {section}{\numberline {3.3}Shape detection using convolution neural networks}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Height estimation form a nadir perspective}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Building height retrieval from VHR SAR Imagery}{29}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Height estimation from InSAR analysis}{30}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4}Equations, etc}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simple Equations}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Including Figures}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}Including Tables}{33}{section.4.3}
+\contentsline {section}{\numberline {4.4}Copying Figures and Tables}{35}{section.4.4}
+\contentsline {section}{\numberline {4.5}References to Figures and Tables}{35}{section.4.5}
+\contentsline {section}{\numberline {4.6}A Word About Font-encoding}{35}{section.4.6}
+\contentsline {section}{\numberline {4.7}Plagiarism}{36}{section.4.7}
+\contentsline {chapter}{\numberline {5}Conclusions}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Summary and Conclusions}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}Discussion}{37}{section.5.2}
+\contentsline {section}{\numberline {5.3}Recommendations for Further Work}{38}{section.5.3}
+\contentsline {chapter}{\numberline {A}Acronyms}{39}{appendix.A}
+\contentsline {chapter}{\numberline {B}What to put in appendixes}{40}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{40}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}More Details}{40}{subsection.B.1.1}
+\contentsline {chapter}{Bibliography}{41}{subsection.B.1.1}

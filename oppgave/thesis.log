@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.24)  19 NOV 2017 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.24)  6 DEC 2017 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -901,6 +901,9 @@ Package: gensymb 2003/07/02 v1.0 (WaS)
 (./front.aux) (./preface.aux) (./acknowledgment.aux) (./summary.aux)
 (./chapter01.aux) (./chapter_theoretical_background.aux
 
+LaTeX Warning: Label `fig:parametricline' multiply defined.
+
+
 LaTeX Warning: Label `fig:cnnarchitecture' multiply defined.
 
 ) (./chapter_related_work.aux
@@ -1216,155 +1219,180 @@ Overfull \hbox (0.8802pt too wide) in paragraph at lines 6--7
  clas-si-cal prob-lem for decades. There
  []
 
-<fig/superpixels.png, id=331, 803.0pt x 604.2575pt>
-File: fig/superpixels.png Graphic file (type png)
- <use fig/superpixels.png>
-Package pdftex.def Info: fig/superpixels.png used on input line 15.
-(pdftex.def)             Requested size: 240.90186pt x 181.27864pt.
-
 [7
 
 
 
-] [8 <./fig/superpixels.png>] [9]
-<fig/backpropagation_two_layers.png, id=369, 148.3944pt x 211.0284pt>
+] <fig/parametric-line.png, id=349, 518.93875pt x 519.9425pt>
+File: fig/parametric-line.png Graphic file (type png)
+
+<use fig/parametric-line.png>
+Package pdftex.def Info: fig/parametric-line.png used on input line 22.
+(pdftex.def)             Requested size: 155.68282pt x 155.98395pt.
+
+<fig/hough_transform.png, id=354, 1028.84375pt x 1028.84375pt>
+File: fig/hough_transform.png Graphic file (type png)
+
+<use fig/hough_transform.png>
+Package pdftex.def Info: fig/hough_transform.png used on input line 31.
+(pdftex.def)             Requested size: 205.7651pt x 205.7651pt.
+ [8 <./fig/parametric-line.png> <./fig/hough_transform.png (PNG copy)>] <fig/su
+perpixels.png, id=376, 803.0pt x 604.2575pt>
+File: fig/superpixels.png Graphic file (type png)
+
+<use fig/superpixels.png>
+Package pdftex.def Info: fig/superpixels.png used on input line 50.
+(pdftex.def)             Requested size: 240.90186pt x 181.27864pt.
+ [9 <./fig/superpixels.png>] [10] [11]
+<fig/backpropagation_two_layers.png, id=415, 148.3944pt x 211.0284pt>
 File: fig/backpropagation_two_layers.png Graphic file (type png)
 
 <use fig/backpropagation_two_layers.png>
 Package pdftex.def Info: fig/backpropagation_two_layers.png used on input line 
-79.
+114.
 (pdftex.def)             Requested size: 148.39403pt x 211.02788pt.
+ [12 <./fig/backpropagation_two_layers.png>]
 
+LaTeX Warning: Reference `section:svm' on page 13 undefined on input line 145.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10] [11 <./fig/backpropagation_two_layers.png>]
-
-LaTeX Warning: Reference `section:svm' on page 12 undefined on input line 110.
-
-[12] [13]
-Overfull \hbox (4.5602pt too wide) in paragraph at lines 143--144
+[13] [14]
+Overfull \hbox (4.5602pt too wide) in paragraph at lines 178--179
 []\T1/futs/m/n/12 Convolutional neu-ral net-works solve this is-sue by rep-re-s
 ent-ing the im-ages in a three-dimensional
  []
 
-<fig/cnn_architecture.png, id=417, 717.6411pt x 370.2633pt>
+[15] <fig/cnn_architecture.png, id=460, 717.6411pt x 370.2633pt>
 File: fig/cnn_architecture.png Graphic file (type png)
 
 <use fig/cnn_architecture.png>
-Package pdftex.def Info: fig/cnn_architecture.png used on input line 158.
+Package pdftex.def Info: fig/cnn_architecture.png used on input line 193.
 (pdftex.def)             Requested size: 430.58798pt x 222.15968pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14] <fig/kernel_filter.png, id=434, 164.25pt x 77.307pt>
+ [16 <./fig/cnn_architecture.png>]
+<fig/kernel_filter.png, id=477, 164.25pt x 77.307pt>
 File: fig/kernel_filter.png Graphic file (type png)
 
 <use fig/kernel_filter.png>
-Package pdftex.def Info: fig/kernel_filter.png used on input line 178.
+Package pdftex.def Info: fig/kernel_filter.png used on input line 213.
 (pdftex.def)             Requested size: 246.37437pt x 115.96019pt.
+
+<fig/pooling_layer.jpeg, id=482, 789.95125pt x 369.38pt>
+File: fig/pooling_layer.jpeg Graphic file (type jpg)
+
+<use fig/pooling_layer.jpeg>
+Package pdftex.def Info: fig/pooling_layer.jpeg used on input line 225.
+(pdftex.def)             Requested size: 394.97466pt x 184.68954pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/pooling_layer.jpeg, id=439, 789.95125pt x 369.38pt>
-File: fig/pooling_layer.jpeg Graphic file (type jpg)
 
-<use fig/pooling_layer.jpeg>
-Package pdftex.def Info: fig/pooling_layer.jpeg used on input line 190.
-(pdftex.def)             Requested size: 394.97466pt x 184.68954pt.
- [15 <./fig/cnn_architecture.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--205
+Underfull \hbox (badness 10000) in paragraph at lines 232--240
 
  []
 
-[16 <./fig/kernel_filter.png> <./fig/pooling_layer.jpeg>]
-<fig/sar.jpg, id=465, 407.5225pt x 265.99374pt>
+[17 <./fig/kernel_filter.png>] <fig/sar.jpg, id=500, 407.5225pt x 265.99374pt>
 File: fig/sar.jpg Graphic file (type jpg)
- <use fig/sar.jpg>
-Package pdftex.def Info: fig/sar.jpg used on input line 217.
+
+<use fig/sar.jpg>
+Package pdftex.def Info: fig/sar.jpg used on input line 252.
 (pdftex.def)             Requested size: 285.2638pt x 186.19434pt.
 
 
-Package natbib Warning: Citation `Yu2012' on page 17 undefined on input line 21
-8.
+Package natbib Warning: Citation `Yu2012' on page 18 undefined on input line 25
+3.
 
-[17 <./fig/sar.jpg>] <fig/inferiogram.png, id=474, 1031.855pt x 401.5pt>
+[18 <./fig/pooling_layer.jpeg>]
+<fig/inferiogram.png, id=507, 1031.855pt x 401.5pt>
 File: fig/inferiogram.png Graphic file (type png)
-
-<use fig/inferiogram.png>
-Package pdftex.def Info: fig/inferiogram.png used on input line 233.
+ <use fig/inferiogram.png>
+Package pdftex.def Info: fig/inferiogram.png used on input line 268.
 (pdftex.def)             Requested size: 412.73468pt x 160.59715pt.
- [18 <./fig/inferiogram.png>]
-<fig/height_estimation.png, id=486, 602.25pt x 398.48875pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./fig/sar.jpg>]
+<fig/height_estimation.png, id=518, 602.25pt x 398.48875pt>
 File: fig/height_estimation.png Graphic file (type png)
 
 <use fig/height_estimation.png>
-Package pdftex.def Info: fig/height_estimation.png used on input line 260.
+Package pdftex.def Info: fig/height_estimation.png used on input line 295.
 (pdftex.def)             Requested size: 301.12425pt x 199.24388pt.
- [19 <./fig/height_estimation.png>]) [20]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20 <./fig/inferiogram.png>]) [21 <./fig/height_estimation.png>]
 \openout2 = `chapter_related_work.aux'.
 
 
 (./chapter_related_work.tex
 Chapter 3.
-[21
+[22
 
 
 
-] [22] <fig/deconv.png, id=537, 958.58125pt x 270.00874pt>
+] [23] <fig/deconv.png, id=575, 958.58125pt x 270.00874pt>
 File: fig/deconv.png Graphic file (type png)
 
 <use fig/deconv.png>
-Package pdftex.def Info: fig/deconv.png used on input line 37.
+Package pdftex.def Info: fig/deconv.png used on input line 42.
 (pdftex.def)             Requested size: 479.28946pt x 135.00403pt.
 
-Overfull \hbox (7.25822pt too wide) in paragraph at lines 37--38
+Overfull \hbox (7.25822pt too wide) in paragraph at lines 42--43
  [][] 
  []
 
-[23 <./fig/deconv.png>]
-<fig/inception_layer.png, id=560, 638.385pt x 685.56125pt>
+[24 <./fig/deconv.png>]
+<fig/inception_layer.png, id=596, 638.385pt x 685.56125pt>
 File: fig/inception_layer.png Graphic file (type png)
 
 <use fig/inception_layer.png>
-Package pdftex.def Info: fig/inception_layer.png used on input line 59.
+Package pdftex.def Info: fig/inception_layer.png used on input line 64.
 (pdftex.def)             Requested size: 319.19171pt x 342.77979pt.
- [24 <./fig/inception_layer.png>]
-<fig/vgg16.png, id=574, 471.7625pt x 277.035pt>
+ [25 <./fig/inception_layer.png>]
+<fig/vgg16.png, id=613, 471.7625pt x 277.035pt>
 File: fig/vgg16.png Graphic file (type png)
  <use fig/vgg16.png>
-Package pdftex.def Info: fig/vgg16.png used on input line 73.
+Package pdftex.def Info: fig/vgg16.png used on input line 78.
 (pdftex.def)             Requested size: 330.23149pt x 193.92317pt.
 
-<fig/degradation.png, id=578, 873.2625pt x 312.16624pt>
+<fig/degradation.png, id=617, 873.2625pt x 312.16624pt>
 File: fig/degradation.png Graphic file (type png)
 
 <use fig/degradation.png>
-Package pdftex.def Info: fig/degradation.png used on input line 85.
+Package pdftex.def Info: fig/degradation.png used on input line 90.
 (pdftex.def)             Requested size: 436.63017pt x 156.08273pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25 <./fig/vgg16.png (PNG copy)>]
-<fig/shortcut_connection.png, id=595, 635.37375pt x 357.335pt>
+[26 <./fig/vgg16.png (PNG copy)>]
+<fig/shortcut_connection.png, id=634, 635.37375pt x 357.335pt>
 File: fig/shortcut_connection.png Graphic file (type png)
 
 <use fig/shortcut_connection.png>
-Package pdftex.def Info: fig/shortcut_connection.png used on input line 108.
+Package pdftex.def Info: fig/shortcut_connection.png used on input line 113.
 (pdftex.def)             Requested size: 317.6861pt x 178.66705pt.
- [26 <./fig/degradation.png> <./fig/shortcut_connection.png>]
-<fig/casenet_edge_detection.png, id=616, 609.27625pt x 590.205pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./fig/degradation.png>]
+<fig/casenet_edge_detection.png, id=654, 609.27625pt x 590.205pt>
 File: fig/casenet_edge_detection.png Graphic file (type png)
 
 <use fig/casenet_edge_detection.png>
-Package pdftex.def Info: fig/casenet_edge_detection.png used on input line 123.
+Package pdftex.def Info: fig/casenet_edge_detection.png used on input line 128.
 
 (pdftex.def)             Requested size: 243.70618pt x 236.0778pt.
- [27 <./fig/casenet_edge_detection.png>])
-[28]
+ [28 <./fig/shortcut_connection.png> <./fig/casenet_edge_detection.png>] [29]
+<fig/insar.png, id=686, 486.81876pt x 357.335pt>
+File: fig/insar.png Graphic file (type png)
+ <use fig/insar.png>
+Package pdftex.def Info: fig/insar.png used on input line 166.
+(pdftex.def)             Requested size: 194.72404pt x 142.93146pt.
+) [30 <./fig/insar.png>]
 \openout2 = `chapter02.aux'.
 
  (./chapter02.tex
@@ -1379,7 +1407,7 @@ uts/m/n/12 (\FMS/futm/m/n/12 ^^@\FML/futmi/m/it/12 ^^Ux\T1/futs/m/n/12 ) \FML/f
 utmi/m/it/12 dx$\T1/futs/m/n/12 ,
  []
 
-[29
+[31
 
 
 
@@ -1390,12 +1418,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
-<fig/NTNU.pdf, id=644, 241.90375pt x 53.19875pt>
+<fig/NTNU.pdf, id=710, 241.90375pt x 53.19875pt>
 File: fig/NTNU.pdf Graphic file (type pdf)
  <use fig/NTNU.pdf>
 Package pdftex.def Info: fig/NTNU.pdf used on input line 64.
 (pdftex.def)             Requested size: 145.14336pt x 31.91948pt.
- [30]
+ [32]
 File: fig/NTNU.pdf Graphic file (type pdf)
 
 <use fig/NTNU.pdf>
@@ -1416,35 +1444,35 @@ raphics \T1/futs/m/n/12 for fig-ures, and above the com-mand $\FMS/futm/m/n/12
 n$\T1/cmtt/m/n/12 begin{tabular*}
  []
 
-[31 <./fig/NTNU.pdf>] [32]
+[33 <./fig/NTNU.pdf>] [34]
 
-Package natbib Warning: Citation `rausand04' on page 33 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 35 undefined on input line
  110.
 
 
-Package natbib Warning: Citation `rausand04' on page 33 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 35 undefined on input line
  112.
 
-[33]
+[35]
 
-Package natbib Warning: Citation `rausand04' on page 34 undefined on input line
+Package natbib Warning: Citation `rausand04' on page 36 undefined on input line
  135.
 
-) [34]
+) [36]
 \openout2 = `chapter0n.aux'.
 
  (./chapter0n.tex
 Chapter 5.
-[35
+[37
 
 
 
-]) [36]
+]) [38]
 \openout2 = `acronyms.aux'.
 
  (./acronyms.tex
 Appendix A.
-) [37
+) [39
 
 
 
@@ -1453,11 +1481,11 @@ Appendix A.
 
  (./appendix-b.tex
 Appendix B.
-) [38
+) [40
 
 
 
-] (./thesis.bbl [39
+] (./thesis.bbl [41
 
 
 ])
@@ -1465,7 +1493,7 @@ Appendix B.
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-[40]
+[42]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./thesis.aux (./front.aux) (./preface.aux) (./acknowledgment.aux)
 (./summary.aux) (./chapter01.aux) (./chapter_theoretical_background.aux)
@@ -1474,7 +1502,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 892EBC826BC301A17DF844B7BE2192A1;3476.
+(rerunfilecheck)             Checksum: 4242A6C36F60F737ADB0D302FF51BE1D;3742.
 
 
 LaTeX Warning: There were undefined references.
@@ -1485,29 +1513,30 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 8937 strings out of 492995
- 125315 string characters out of 6132703
- 216081 words of memory out of 5000000
- 11992 multiletter control sequences out of 15000+600000
+ 8985 strings out of 492995
+ 126176 string characters out of 6132703
+ 216632 words of memory out of 5000000
+ 12022 multiletter control sequences out of 15000+600000
  119820 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,10n,34p,1037b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,16n,34p,1037b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/adobe/utopia/putri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
-blic/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (45 pages, 3842177 bytes).
+live/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
+e1/adobe/utopia/putri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (47 pages, 4428725 bytes).
 PDF statistics:
- 798 PDF objects out of 1000 (max. 8388607)
- 704 compressed objects within 8 object streams
- 199 named destinations out of 1000 (max. 500000)
- 476 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 764 compressed objects within 8 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 515 words of extra memory for PDF output out of 10000 (max. 10000000)
 

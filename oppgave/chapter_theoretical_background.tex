@@ -1,11 +1,46 @@
 \chapter{Theoretical background}
 %Here you identify and give the theoretical background needed in this report, with proper references to each literature reference used. The selection of what to include should be discussed and agreed with the supervisors. Theory may involve concepts, definitions, methods, regulations/key standards, theory to explain specific system behavior, and so on.
-In this chapter we are going to investigate some of the key concepts related to pattern recognition and shape detection in imagery. 
+In this chapter we are going to investigate some of the key concepts related to pattern recognition, shape detection in imagery and height estimation from remote sensing. 
 
 \section{Shape detection}
 Identifying geometric shapes in computer vision has been a classical problem for decades. There are many theories related to what is the best way of detecting a particular shape in an image, with shapes defines as two dimensional features of an object that are invariant to scene factors, or whose variation can be modeled easily \citep{Moon2002}.
 
-\section{Shape detection using superpixels}
+\subsection{The Hough transform}
+In image analysis, the Hough Transform is a technique used for feature extraction. This technique uses a voting procedure from which object candidates are obtained as local maxima in a space constructed by the algorithm (called a accumulator space). Since the algorithm requires that the desired features are specified in some parametric from, the classical Hough transform is mostly used for the detection of regular curves (lines, circles ellipses, etc.).
+
+The main idea of the algorithm is that each edge pixel contributes to a globally consistent solution, such as a curve. In order to detect a points contribution to this solution, the algorithm performs a point-to-curve transformation from the cartesian image coordinate space, to a polar Hough parameter space. In the cartesian coordinate space, a line segment can be represented by \autoref{eq:parametric}.
+
+\begin{equation}
+	xcos(\theta) + ysin(\theta) = r
+	\label{eq:parametric}
+\end{equation}
+
+In \autoref{fig:parametricline} each point (x,y) on the line corresponds to a set of constant $r$ and $\theta$ values.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.3]{fig/parametric-line.png}
+	\caption{Parametric line represented by \autoref{eq:parametric} \citep{Fisher2003}}
+	\label{fig:parametricline}
+\end{figure}
+
+Therefore when viewed in the Hough parameter space, points that are collinear in the cartesian space will yield curves which intersect at common $r$ and $\theta$ values. Here bright areas (high degree of intersection) indicates collinearity between points in an image.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.2]{fig/hough_transform.png}
+	\caption{Parametric line represented by \autoref{eq:parametric} \citep{Fisher2003}}
+	\label{fig:parametricline}
+\end{figure}
+
+For detecting circles the computational complexity of the algorithm increases, because the parametric equation representing a circle requires a three dimensional Hough parameter space (see \autoref{eq:parametriccircle}).
+
+\begin{equation}
+	(x-a)^{2}+(y-b)^{2} = r^{2}
+	\label{eq:parametriccircle}
+\end{equation}
+
+\subsection{Shape detection using superpixels}
 Most images are based on a raster format, meaning that pixels in the image are structured as an array or grid, where each pixel is associated with a position (row and column), and a numeric value. Raster images can represent a range of different shapes, where a point can be represented by a single pixel and a circle by a contiguous collection of pixels \citep{Worboys2003}. Even though rasters are easy to work with in most computer systems, since they are represented the way that they are, they do not contain any information about the topology of the objects in the image. For example, there is no way of knowing if a pixel is contained within a certain object or not. In order to identify objects, one approach is therefore to detect edge pixels.
 
 In recent years shape detection algorithms have come to increasingly rely on superpixel algorithms, which groups pixels into perceptually meaningful atomic regions \citep{Achanta2012}. Such regions replace the regular, rigid structure of the raster grid, as shown in \autoref{fig:superpixels}.
@@ -203,7 +238,7 @@ http://melvincabatuan.github.io/SLIC-Superpixels/
 https://www.gislounge.com/shadows-angles-measuring-object-heights-satellite-imagery/
 \\
 
-\section{Height estimation using satellite data}\label{section:theoreticheight}
+\section{Height estimation using remote sensing}\label{section:theoreticheight}
 
 There are many different ways of estimating heights using satellite data, which involves using lidar data, SAR data and regular satellite multispectral imagery. This section will give the theoretical background for some of the most commonly used techniques.
 
