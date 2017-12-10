@@ -8,22 +8,29 @@ A level-1 auxiliary file: summary.aux
 A level-1 auxiliary file: chapter01.aux
 A level-1 auxiliary file: chapter_theoretical_background.aux
 A level-1 auxiliary file: chapter_related_work.aux
-A level-1 auxiliary file: chapter02.aux
+A level-1 auxiliary file: chapter_suggestion_for_solution.aux
 A level-1 auxiliary file: chapter0n.aux
-A level-1 auxiliary file: acronyms.aux
-A level-1 auxiliary file: appendix-b.aux
 The style file: apa.bst
 Database file #1: bib/prosjekt.bib
-Repeated entry---line 146 of file bib/prosjekt.bib
+Repeated entry---line 162 of file bib/prosjekt.bib
+ : @article{Pinheiro2016
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 191 of file bib/prosjekt.bib
+ : @article{Lin2016
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 393 of file bib/prosjekt.bib
  : @article{Ballard1981
  :                     ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "lundteigen08"
-Warning--I didn't find a database entry for "rausand14"
-Warning--I didn't find a database entry for "rausand04"
 Warning--I didn't find a database entry for "Yu2012"
 Warning--empty journal in Brunner2008
+Warning--empty year in ESA
+Warning--empty journal in Kaiser2017
+Warning--empty journal in Kemker2017
 Warning--empty journal in LeC
+Warning--empty journal in Lin2016
 Warning--there's a number but no volume in Liu2015
 Warning--empty publisher in Minsky1969
 Warning--empty publisher in Patterson2017
@@ -31,45 +38,45 @@ Warning--empty journal in Simonyan2014
 Warning--empty journal in Szegedy2014
 Warning--empty publisher in Worboys2003
 Warning--empty journal in Yu2017
-You've used 28 entries,
+You've used 37 entries,
             1940 wiz_defined-function locations,
-            653 strings with 7902 characters,
-and the built_in function-call counts, 10558 in all, are:
-= -- 1026
-> -- 444
-< -- 21
-+ -- 148
-- -- 148
-* -- 919
-:= -- 1847
-add.period$ -- 71
-call.type$ -- 28
-change.case$ -- 211
-chr.to.int$ -- 28
-cite$ -- 37
-duplicate$ -- 395
-empty$ -- 686
-format.name$ -- 186
-if$ -- 2016
+            693 strings with 9189 characters,
+and the built_in function-call counts, 14148 in all, are:
+= -- 1368
+> -- 628
+< -- 26
++ -- 212
+- -- 212
+* -- 1242
+:= -- 2485
+add.period$ -- 94
+call.type$ -- 37
+change.case$ -- 288
+chr.to.int$ -- 37
+cite$ -- 50
+duplicate$ -- 518
+empty$ -- 900
+format.name$ -- 259
+if$ -- 2689
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 130
-num.names$ -- 84
-pop$ -- 198
+missing$ -- 29
+newline$ -- 171
+num.names$ -- 111
+pop$ -- 271
 preamble$ -- 1
-purify$ -- 214
+purify$ -- 291
 quote$ -- 0
-skip$ -- 323
+skip$ -- 420
 stack$ -- 0
-substring$ -- 701
-swap$ -- 81
-text.length$ -- 6
+substring$ -- 922
+swap$ -- 103
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
-warning$ -- 9
-while$ -- 91
+type$ -- 216
+warning$ -- 13
+while$ -- 121
 width$ -- 0
-write$ -- 323
-(There was 1 error message)
+write$ -- 425
+(There were 3 error messages)

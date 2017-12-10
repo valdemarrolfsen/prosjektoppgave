@@ -26,6 +26,21 @@ Brunner, D., Lemoine, G., and Bruzzone, L. (2008).
 Cambridge (2017).
 \newblock {Convolutional Neural Networks with Keras}.
 
+\bibitem[\protect\astroncite{Comber et~al.}{2012}]{Comber2012}
+Comber, A., Umezaki, M., Zhou, R., Ding, Y., Li, Y., Fu, H., Jiang, H., and
+  Tewkesbury, A. (2012).
+\newblock {Using shadows in high-resolution imagery to determine building
+  height}.
+\newblock {\em Remote Sensing Letters}, 3(7):551--556.
+
+\bibitem[\protect\astroncite{DigitalGlobe}{2017}]{DigitalGlobe2017}
+DigitalGlobe (2017).
+\newblock {Our Constellation - DigitalGlobe}.
+
+\bibitem[\protect\astroncite{ESA}{}]{ESA}
+ESA.
+\newblock {Overview - Copernicus}.
+
 \bibitem[\protect\astroncite{Esa}{2009}]{Esa2009a}
 Esa (2009).
 \newblock {50 years of Earth Observation}.
@@ -42,9 +57,21 @@ Frossard, D. (2016).
 GISLounge (2014).
 \newblock {Measuring Object Heights from Satellite Imagery}.
 
+\bibitem[\protect\astroncite{Kaiser et~al.}{2017}]{Kaiser2017}
+Kaiser, P., Wegner, J.~D., Lucchi, A., Jaggi, M., Hofmann, T., Schindler, K.,
+  and Member, S. (2017).
+\newblock {Learning Arial Image Segmentation from Online Maps}.
+\newblock pages 1--15.
+
 \bibitem[\protect\astroncite{Karpathy}{2017}]{Karpathy2017}
 Karpathy (2017).
 \newblock {Convolutional Neural Networks for Visual Recognition}.
+
+\bibitem[\protect\astroncite{Kemker et~al.}{2017}]{Kemker2017}
+Kemker, R., Salvaggio, C., and Kanan, C. (2017).
+\newblock {Algorithms for Semantic Segmentation of Multispectral Remote Sensing
+  Imagery using Deep Learning}.
+\newblock pages 1--45.
 
 \bibitem[\protect\astroncite{Krizhevsky et~al.}{2012}]{Krizhevsky2012}
 Krizhevsky, A., Sutskever, I., and Hinton, G.~E. (2012).
@@ -65,6 +92,11 @@ Lary, D.~J., Alavi, A.~H., Gandomi, A.~H., and Walker, A.~L. (2016).
 \bibitem[\protect\astroncite{{Le Cun} et~al.}{1998}]{LeC}
 {Le Cun}, Y., Bottou, L., Bengio, Y., and Haffner, P. (1998).
 \newblock {Gradient-Based Learning Applied to Document Recognition}.
+
+\bibitem[\protect\astroncite{Lin et~al.}{2016}]{Lin2016}
+Lin, G., Milan, A., Shen, C., and Reid, I. (2016).
+\newblock {RefineNet: Multi-Path Refinement Networks for High-Resolution
+  Semantic Segmentation}.
 
 \bibitem[\protect\astroncite{Liu et~al.}{2015}]{Liu2015}
 Liu, W., Suzuki, K., and Yamazaki, F. (2015).
@@ -95,6 +127,22 @@ Noh, H., Hong, S., and Han, B. (2015).
 \bibitem[\protect\astroncite{Patterson and Gibson}{2017}]{Patterson2017}
 Patterson, J. and Gibson, A. (2017).
 \newblock {\em {Deep Learning - A Practitioner's Approach}}.
+
+\bibitem[\protect\astroncite{Pinheiro et~al.}{2016}]{Pinheiro2016}
+Pinheiro, P.~O., Lin, T.~Y., Collobert, R., and Doll{\'{a}}r, P. (2016).
+\newblock {Learning to refine object segments}.
+\newblock {\em Lecture Notes in Computer Science (including subseries Lecture
+  Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 9905
+  LNCS:75--91.
+
+\bibitem[\protect\astroncite{Planet}{2017}]{Planet2017}
+Planet (2017).
+\newblock {SkySat - Constellations}.
+
+\bibitem[\protect\astroncite{Shao et~al.}{2011}]{Shao2011}
+Shao, Y., Taff, G.~N., and Walsh, S.~J. (2011).
+\newblock {Shadow detection and building-height estimation using IKONOS data}.
+\newblock {\em International Journal of Remote Sensing}, 32(22):6929--6944.
 
 \bibitem[\protect\astroncite{Simonyan and Zisserman}{2014}]{Simonyan2014}
 Simonyan, K. and Zisserman, A. (2014).

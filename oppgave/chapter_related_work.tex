@@ -120,7 +120,7 @@ Using these concepts, the authors were able to create the winning 152-layer deep
 Check out
 http://yann.lecon.com/exdb/publis/pdf/lecun-89e.pdf
 
-\section{Shape detection using convolution neural networks}
+\section{Semantic segmentation using convolution neural networks}
 In later years there have been a significant progress in the field of edge detection in imagery has been made due to advances in deep learning \citep{Yu2017}. Using an end to end deep semantic edge learning architecture based on ResNets \citep{Wu2017} and further extending the networks architecture with a new skip-layer, \cite{Yu2017} are able to not only identify, but also categorize edges in an image (see \autoref{fig:casenet}).
 
 \begin{figure}[!h]
@@ -133,6 +133,17 @@ In later years there have been a significant progress in the field of edge detec
 The skip-layer uses category-wise edge activations, which are added on top of convolution layer, which share and are fused with the same set of bottom layer features. Using this approach the network produces n different edge maps, where n is the number of defined categories. Each map indicates the edge probability of e certain category.
 
 The proposed CASENet is a modification of the ResNet-101, with some modification to the convolutional blocks, in order to preserve low-level edge information. The authors compare their network to other similar architectures, and show that their architecture outperforms state-of-the-art networks.
+
+In terms of aerial image segmentation \cite{Kaiser2017} present a solution, which deals with the lack of labeled training data available. In order to do so, the authors make use of the open source map data library OpenStreetMap, in order to automatically derive weakly labeled training data. By matching this data with aerial imagery from Google Maps, and training a fully convolutional neural network they are able to classify buildings and roads at a high level of accuracy (see \autoref{fig:aerialsegmentation}).
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{fig/aerial_segmentation.png}
+	\caption{Results from classification of buildings and roads \citep{Kaiser2017}}
+	\label{fig:aerialsegmentation}
+\end{figure}
+
+Other attempts for semantic segmentation in remote sensing have been done with different variants of deep convolutional neural networks \citep{Kemker2017}. In their paper, they propose an approach for using the Digital Imaging and Remote Sensing Image Generation (DIRSIG) modeling software to generate a large quantity of synthetic multispectral imagery and corresponding labels. For the semantic segmentation, the authors adapt two fully-convolutional neural networks called SharpMask \citep{Pinheiro2016} and RefineNet \citep{Lin2016}. Their results show that it is possible to usesynthetic imagery can be used to assist in terms of training semantic segmentation networks when there is not enough annotated image data.
 
 \section{Height estimation form a nadir perspective}
 As seen in \autoref{section:theoreticheight} there are many different techniques that can be applied in order to estimate the height of a building. This section will focus on different attempts to retrieve height data, using satellite imagery.
@@ -169,3 +180,27 @@ In \autoref{eq:layoverheight} $\Delta\Phi$ is the phase difference within one pi
 \end{figure}
 
 Using this method \cite{Liu2015} were able to estimate the height of high-rise buildings in a crowded area with a RMS of 13m and an average difference between detected results and the reference values of 6.6m.
+
+\subsection{Height estimation using shadow measurement}
+While some height extraction methods require precise specifications regarding the geometrical properties of remotely sensed data, \cite{Comber2012} present a method for determining height using building shadows. By classifying buildings and their associated shadows based on a series of different measures (see \autoref{fig:shadowclassification}), and applying \autoref{eq:shadowheight} the authors were able to give relative good height estimations.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.6]{fig/shadow_classification.png}
+	\caption{Classification of buildings and their assiciated shadows \citep{Comber2012}}
+	\label{fig:shadowclassification}
+\end{figure}
+
+\begin{equation}
+	H=\frac{W}{\frac{cos(\phi_{sun}+90+\phi_{az})}{tan(\phi_{sun})}}
+	\label{eq:shadowheight}
+\end{equation}
+
+Other attempts have also been made in terms of estimation heights using shadows, such as \cite{Shao2011} who addresses the issue of distinguishing between shadows and water in aerial photographs. In their approach they merged the two classes to a single shadow/water class, and used different spatial indices such as obect size, shape and spatial neighbour information in order to separate shadow and water. They further used a standard trigonometrical approach in order to estimate the building heights. Their results can be seen in \autoref{fig:shadowheightresults}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.4]{fig/shadow_height_results.png}
+	\caption{Accuracy evaluation of building height estimation \citep{Shao2011}}
+	\label{fig:shadowheightresults}
+\end{figure}
