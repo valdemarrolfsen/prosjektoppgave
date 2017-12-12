@@ -2,25 +2,33 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: front.aux
-A level-1 auxiliary file: preface.aux
-A level-1 auxiliary file: acknowledgment.aux
 A level-1 auxiliary file: summary.aux
+A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: chapter01.aux
 A level-1 auxiliary file: chapter_theoretical_background.aux
 A level-1 auxiliary file: chapter_related_work.aux
 A level-1 auxiliary file: chapter_suggestion_for_solution.aux
+Case mismatch error between cite keys AirBus2017 and Airbus2017
+---line 11 of file chapter_suggestion_for_solution.aux
+ : \citation{AirBus2017
+ :                     }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapter0n.aux
 The style file: apa.bst
 Database file #1: bib/prosjekt.bib
-Repeated entry---line 162 of file bib/prosjekt.bib
+Repeated entry---line 443 of file bib/prosjekt.bib
  : @article{Pinheiro2016
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 191 of file bib/prosjekt.bib
+Repeated entry---line 490 of file bib/prosjekt.bib
  : @article{Lin2016
  :                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 393 of file bib/prosjekt.bib
+Repeated entry---line 503 of file bib/prosjekt.bib
+ : @misc{AirBus2017
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 524 of file bib/prosjekt.bib
  : @article{Ballard1981
  :                     ,
 I'm skipping whatever remains of this entry
@@ -38,45 +46,45 @@ Warning--empty journal in Simonyan2014
 Warning--empty journal in Szegedy2014
 Warning--empty publisher in Worboys2003
 Warning--empty journal in Yu2017
-You've used 37 entries,
+You've used 38 entries,
             1940 wiz_defined-function locations,
-            693 strings with 9189 characters,
-and the built_in function-call counts, 14148 in all, are:
-= -- 1368
-> -- 628
+            699 strings with 9446 characters,
+and the built_in function-call counts, 14668 in all, are:
+= -- 1417
+> -- 661
 < -- 26
-+ -- 212
-- -- 212
-* -- 1242
-:= -- 2485
-add.period$ -- 94
-call.type$ -- 37
-change.case$ -- 288
-chr.to.int$ -- 37
-cite$ -- 50
-duplicate$ -- 518
-empty$ -- 900
-format.name$ -- 259
-if$ -- 2689
++ -- 224
+- -- 224
+* -- 1294
+:= -- 2577
+add.period$ -- 97
+call.type$ -- 38
+change.case$ -- 299
+chr.to.int$ -- 38
+cite$ -- 51
+duplicate$ -- 532
+empty$ -- 929
+format.name$ -- 272
+if$ -- 2785
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 29
-newline$ -- 171
-num.names$ -- 111
-pop$ -- 271
+missing$ -- 30
+newline$ -- 176
+num.names$ -- 114
+pop$ -- 280
 preamble$ -- 1
-purify$ -- 291
+purify$ -- 302
 quote$ -- 0
-skip$ -- 420
+skip$ -- 430
 stack$ -- 0
-substring$ -- 922
-swap$ -- 103
+substring$ -- 959
+swap$ -- 105
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 216
+type$ -- 222
 warning$ -- 13
-while$ -- 121
+while$ -- 125
 width$ -- 0
-write$ -- 425
-(There were 3 error messages)
+write$ -- 438
+(There were 5 error messages)

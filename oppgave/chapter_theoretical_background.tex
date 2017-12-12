@@ -1,14 +1,14 @@
 \chapter{Theoretical background}
 %Here you identify and give the theoretical background needed in this report, with proper references to each literature reference used. The selection of what to include should be discussed and agreed with the supervisors. Theory may involve concepts, definitions, methods, regulations/key standards, theory to explain specific system behavior, and so on.
-In this chapter we are going to investigate some of the key concepts related to pattern recognition, shape detection in imagery and height estimation from remote sensing. 
+In this chapter, we are going to investigate some of the fundamental concepts related to pattern recognition, shape detection in imagery and height estimation from remote sensing. 
 
 \section{Image segmentation}
-Identifying geometric shapes in computer vision has been a classical problem for decades. There are many theories related to what is the best way of detecting a particular shape in an image, with shapes defines as two dimensional features of an object that are invariant to scene factors, or whose variation can be modeled easily \citep{Moon2002}.
+Identifying geometric shapes in computer vision has been a classical problem for decades. There are many theories related to what is the best way of detecting a particular shape in an image, with shapes defines as two-dimensional features of an object that are invariant to scene factors, or whose variation can be modeled easily \citep{Moon2002}.
 
 \subsection{The Hough transform}
-In image analysis, the Hough Transform is a technique used for feature extraction. This technique uses a voting procedure from which object candidates are obtained as local maxima in a space constructed by the algorithm (called a accumulator space). Since the algorithm requires that the desired features are specified in some parametric from, the classical Hough transform is mostly used for the detection of regular curves (lines, circles ellipses, etc.).
+In image analysis, the Hough Transform is a technique used for feature extraction. This method uses a voting procedure from which object candidates are obtained as local maxima in a space constructed by the algorithm (called an accumulator space). Since the algorithm requires that the desired features are specified in some parametric form, the classical Hough transform is mostly used for the detection of regular curves (lines, circles ellipses, etc.).
 
-The main idea of the algorithm is that each edge pixel contributes to a globally consistent solution, such as a curve. In order to detect a points contribution to this solution, the algorithm performs a point-to-curve transformation from the cartesian image coordinate space, to a polar Hough parameter space. In the cartesian coordinate space, a line segment can be represented by \autoref{eq:parametric}.
+The main idea of the algorithm is that each edge pixel contributes to a globally consistent solution, such as a curve. To detect a points contribution to this solution, the algorithm performs a point-to-curve transformation from the cartesian image coordinate space, to a polar Hough parameter space. In the cartesian coordinate space, a line segment can be represented by \autoref{eq:parametric}.
 
 \begin{equation}
 	xcos(\theta) + ysin(\theta) = r
@@ -41,7 +41,7 @@ For detecting circles the computational complexity of the algorithm increases, b
 \end{equation}
 
 \subsection{Image segmentation using superpixels}
-Most images are based on a raster format, meaning that pixels in the image are structured as an array or grid, where each pixel is associated with a position (row and column), and a numeric value. Raster images can represent a range of different shapes, where a point can be represented by a single pixel and a circle by a contiguous collection of pixels \citep{Worboys2003}. Even though rasters are easy to work with in most computer systems, since they are represented the way that they are, they do not contain any information about the topology of the objects in the image. For example, there is no way of knowing if a pixel is contained within a certain object or not. In order to identify objects, one approach is therefore to detect edge pixels.
+Most images are based on a raster format, meaning that pixels in the image are structured as an array or grid, where each pixel is associated with a position (row and column), and a numeric value. Raster images can represent a range of different shapes, where a point can be represented by a single pixel and a circle by a contiguous collection of pixels \citep{Worboys2003}. Even though raster images are easy to work with in most computer systems, since they are represented the way that they are, they do not contain any information about the topology of the objects in the image. For example, there is no way of knowing if a pixel is contained within a particular object or not. An approach to detecting objects is therefore to detect edge pixels.
 
 In recent years shape detection algorithms have come to increasingly rely on superpixel algorithms, which groups pixels into perceptually meaningful atomic regions \citep{Achanta2012}. Such regions replace the regular, rigid structure of the raster grid, as shown in \autoref{fig:superpixels}.
 
@@ -52,7 +52,7 @@ In recent years shape detection algorithms have come to increasingly rely on sup
 	\label{fig:superpixels}
 \end{figure}
 
-When constructing superpixels, there are some properties of the algorithm that are desirable, regardless of the problem that are being solved. These are, according to \citep{Achanta2012}, the following three points:
+When constructing superpixels, there are some properties of the algorithm that is desirable, regardless of the problem that is being solved. These are, according to \citep{Achanta2012}, the following three points:
 
 \begin{itemize}
 	\item Superpixels should adhere well to image boundaries
@@ -61,30 +61,30 @@ When constructing superpixels, there are some properties of the algorithm that a
 \end{itemize}
 
 \section{Artificial Neural Networks}
-In recent years, the development of machine learning, a branch of artificial intelligent systems, has become increasingly important in terms of pattern and object recognition in remote sensing and image analysis in general. One of the most commonly used approaches for data mining in remote sensing, has been artificial neural networks \cite{Lary2016}.
+In recent years, the development of machine learning, a branch of artificially intelligent systems, has become increasingly important regarding pattern and object recognition in remote sensing and image analysis in general. One of the most commonly used approaches for data mining in remote sensing has been artificial neural networks \cite{Lary2016}.
 
-The basic principle behind artificial neural networks (ANNs) is that it is built up by a network of many simple units that are working in parallel with no centralized control unit. The networks primary means of storage are the weights between the individual units, and the network learns by updating these weights in relation to being provided with a training example.
+The fundamental principle behind artificial neural networks (ANNs) is that it is built up by a network of many simple units that are working in parallel with no centralized control unit. The networks primary means of storage are the weights between the individual units, and the network learns by updating these weights every time it is provided with a training example.
 
 In order to understand the behavior of ANNs it is important to understand their structures. The most common structure for an ANN is what is called a Feed-forward neural network structure.
 
 \subsection{Feed-forward neural networks}
-A feed-forward neural network is build up by a given number of connected layers. A layer is a collection of simple units, called artificial neurons. All networks must consist of an input and output layer, but can also contain an optional number of hidden layers. A network that only consists of an input and output layer is called a perceptron, and it has been shown that these types of networks are only able to model linear functions \citep{Minsky1969}.
+A feed-forward neural network is build up by a given number of connected layers. A layer is a collection of simple units, called artificial neurons. All networks must consist of one input and output layer, but can also contain an optional number of hidden layers. A network that only consists of one input and output layer is called a perceptron, and it has been shown that these types of networks are only able to model linear functions \citep{Minsky1969}.
 
 \paragraph{Input Layer}
-The input layer is the layer that feeds the information into the network. Here the number of neurons are typically equal to the number of features in the data.
+The input layer is the layer that feeds the information into the network. Here the number of neurons is typically equal to the number of features in the data.
 
 \paragraph{Hidden layer}
-The hidden layers in an ANN is what enables the network to learn and model nonlinear functions. It is the weights on the connections between the different layers that enables the network to encode the information extracted from the training data.
+The hidden layers in an ANN are what enables the network to learn and model nonlinear functions. It is the weights on the connections between the different layers that enables the network to encode the information extracted from the training data.
 
 \paragraph{Output layer}
-In order to extract the answer or prediction from the model, an output layer has to be present. Depending on the setup of the neural network, the output value can either be a real value or a set of probabilities. The output type is dependent on the activation that is chosen for the layer. What an activation function is, and how it effects the output of a layer will be discussed later in this section.
+An output layer has to be present in order to extract the answer or prediction from the model. Depending on the setup of the neural network, the output value can either be a real value or a set of probabilities. The output type is dependent on the activation that is chosen for the layer. What an activation function is, and how it effects the output of a layer will be discussed later in this section.
 
-A feed forward network can either be fully og partly connected. In a fully connected network, all the neurons in each layer has a connection to all neurons in the previous layer, and all neurons in the next layer, while in a partly connected layer only some of the neurons are connected.
+A feed-forward network can either be fully or partly connected. In a fully connected network, all the neurons in each layer have a connection to all neurons in the previous layer, and all neurons in the next layer, while in a partly connected layer only some of the neurons are connected.
 
 \subsection{Training a neural network}
-The main purpose of a well trained ANN is to be able, by using its weighted connections, to amplify the signal and dampen the noise of the data it has been trained on. It does so by altering the different weights and biases in a way that allocates significance to some features and removing it from other. This way the model can learn which features are tied to which outcomes.
+The primary purpose of a well trained ANN is to be able, by using its weighted connections, to amplify the signal and dampen the noise of the data it has been trained on. It does so by altering the different weights and biases in a way that allocates significance to some features and removing it from other. This way the model can learn which features are tied to which outcomes.
 
-Neural networks learn these relationships by making a guess based on the input, weights and biases, and then get feedback on how accurate the guess was. It is the loss function related to the model, such as stochastic gradient decent (SDG), which gives this feedback by rewarding good guesses and penalizing bad ones.
+Neural networks learn these relationships by making a guess based on the input, weights, and biases, and then get feedback on how accurate the guess was. It is the loss function related to the model, such as stochastic gradient descent (SDG), which gives this feedback by rewarding good guesses and penalizing bad ones.
 
 The most common learning algorithm associated with neural networks is the \textit{backpropagation learning algorithm}.
 
@@ -116,64 +116,67 @@ where the input sum is given by:
 	\label{fig:backpropagationtwolayers}
 \end{figure}
 
-The backpropagation algorithm traverses the network backwards, updating the weight of connection between each layer, as describd in \autoref{eq:backupdate}, until it reaches the input layer. This way the weights and biases that have been assigned the blame for the error are reduced, while the ones that supporting the correct answer are strengthened. 
+The backpropagation algorithm traverses the network backward, updating the weight of connection between each layer, as described in \autoref{eq:backupdate} until it reaches the input layer. This way the weights and biases that have been assigned the blame for the error are reduced, while the ones that are supporting the correct answer are strengthened.
 
 \subsection{Activation functions}
 Activation functions are scalar-to-scalar functions which are used to propagate the output of one layer to the next, and it is what enables the network to model nonlinear functions. This section will discuss some of the most common activation functions used in ANNs.
 
 \paragraph{Linear}
-The linear activation function, $f(x) = Wx$ is the simplest activation function and is often associated with the input layer of the network. It says that the dependent variable $x$ is proportional with the independent variable $Wx$.
+The linear activation function, $f(x) = Wx$ is the most straightforward activation function and is often associated with the input layer of the network. It says that the dependent variable $x$ is proportional to the independent variable $Wx$.
 
 \paragraph{Sigmoid}
 The sigmoid activation function belongs to the class of logistic activation functions. It reduces extreme values or outliers in the example data, without removing them. One could see the sigmoid function as a machine that coverts independent variables of near infinite range into probabilities between 0 and 1.
 
 \paragraph{Tanh (and Hard Tanh)}
-Another class of activation functions are the hyperbolic trigonometric functions. The tanh function represents the ratio between the hyperbolic sine sine to the hyperbolic cosine, which means that unlike the sigmoid function, it has a normalized range between -1 and 1. The hard tanh activation function simply adds hard caps to the range, setting all values larger than 1 and smaller than -1 to respectively 1 and -1. The advantage of these functions are that they can deal more easily with negative numbers.
+Another class of activation functions is the hyperbolic trigonometric functions. The tanh function represents the ratio between the hyperbolic sine sine to the hyperbolic cosine, which means that unlike the sigmoid function, it has a normalized range between -1 and 1. The hard tanh activation function simply adds hard caps to the range, setting all values larger than 1 and smaller than -1 to respectively 1 and -1. The advantage of these functions is that they can deal more efficiently with negative numbers.
 
 \paragraph{Softmax}
-The softmax function, also referred to as the normalized, exponential function, is a generalization of the logistic function. Its function is that it returns the probability distribution over mutually exclusive output classes. For example, if the softmax activation function was applied to the vector [1, 2, 3, 4, 1, 2, 3], the result would be [0.024, 0.064, 0.175, 0.475, 0.024, 0.064, 0.175,]. As seen from this example, the function is most often used to weight the largest value and dampen values that are considerably smaller. 
+The softmax function also referred to as the normalized, exponential function, is a generalization of the logistic function. Its function is that it returns the probability distribution over mutually exclusive output classes. For example, if the softmax activation function was applied to the vector [1, 2, 3, 4, 1, 2, 3], the result would be [0.024, 0.064, 0.175, 0.475, 0.024, 0.064, 0.175,]. As seen from this example, the function is most often used to weight the largest value and dampen values that are considerably smaller. 
 
 \paragraph{ReLU}
 The rectified linear unit function is currently considered the state of the art activation function. It can be described as $f(x)=max(0,x)$, meaning that it, above a certain threshold the output has a linear relationship with the dependent variable, it is else zero.
 
 \subsection{Loss functions}
-When working with artificial neural networks, we often talk about the ideal state of the network, meaning the state that classifies all the examples correctly. The loss function is a way of quantifying how close a network is to this ideal state. This is done by aggregating the errors produced by the networks prediction over the entire dataset, and average this value to get a single number that represents how close the network is to its ideal state. In other words, by minimizing the loss function, the network gets as close as possible to its ideal state, resulting in an optimization problem where the solution can be approximated well with iterative optimization algorithms.
+When working with artificial neural networks, we often talk about the ideal state of the network, meaning the state that classifies all the examples correctly. The loss function is a way of quantifying how close a network is to this ideal state. This is done by aggregating the errors produced by the network's prediction over the entire dataset and average this value to get a single number that represents how close the network is to its ideal state. In other words, by minimizing the loss function, the network gets as close as possible to its ideal state, resulting in an optimization problem where the solution can be approximated well with iterative optimization algorithms.
 
-There are different loss functions that are appropriate for regression and classification problems, however for the purpose of this project report it is only relevant to discuss the ones related to classification problems.
+There are different loss functions that are appropriate for regression and classification problems, however, for this project report, it is only relevant to discuss the ones related to classification problems.
 
 \paragraph{Hinge loss}
-For hard classification, for example with discrete classes [sell=0, buy=1], the hinge loss function is most commonly used. It is also used by a class of models called maximum-margin classification models such as support vector machines, which are discussed in \autoref{section:svm}.
+For hard classification, for example with discrete classes [sell=0, buy=1], the hinge loss function is most commonly used. It is also used by a type of models called maximum-margin classification models such as support vector machines, which are discussed in \autoref{section:svm}.
 
 \paragraph{Logistic loss}
-Often probabilities are of greater interest than hard classifications, in such situations the logistic loss function is of more value. An important remark when computing probabilities, is that all values has to be in the range 0 to 1 and that the probability of mutually exclusive outcomes should sum up to 1. Therefore, it is essential that the last layer uses the softmax activation function.
+Often probabilities are of more significant interest than hard classifications, in such situations the logistic loss function is of more value. A vital remark when computing probabilities, is that all values have to be in the range 0 to 1 and that the probability of mutually exclusive outcomes should sum up to 1. Therefore, it is essential that the last layer uses the softmax activation function.
 
-Optimizing the logistic loss function is the same as optimizing the "maximal likelihood", which means that the algorithm should maximize the probability that it predict the correct class, and do so for each single sample in the dataset. 
-
-NOT FINISHED HERE
+Optimizing the logistic loss function is the same as optimizing the "maximal likelihood", which means that the algorithm should maximize the probability that it predicts the correct class, and do so for every single sample in the dataset. 
 
 \subsection{Hyperparamenters}\label{section:hyperparameters}
-In machine learning, hyperparameters deal with controlling the optimazation functions during learning, making sure that they neither overfit or underfit the data, but at the same time learns as quickly as possible.
+In machine learning, hyperparameters deal with controlling the optimization functions during learning, making sure that they neither overfit or underfit the data, but at the same time learns as quickly as possible.
 
 \paragraph{Learning rate}
-The learning rate, as seen in \autoref{eq:backupdate}, is a coefficient that scales the size of each weight update step. In other words, the learning rate decides how much of the computed gradient that should be used for each step. 
+The learning rate, as seen in \autoref{eq:backupdate} is a coefficient that scales the size of each weight update step. In other words, the learning rate decides how much of the computed gradient that should be used for each step. 
 
 \paragraph{Regularization}
-Regularization is important in order to control what is called out-of-control parameters. This is done by controlling the trade-off between finding a good fit on the training data and limiting the weight on features with high-polynomials. This is because such features tend to overfit the training examples.
+Regularization is essential to control what is called out-of-control parameters. This is done by controlling the trade-off between finding a good fit on the training data and limiting the weight of features with high-polynomials. This is because such features tend to overfit the training examples.
 
 \paragraph{Momentum}
-Momentum is often described as the the learning rate of the learning rate. What it does is to prevent the learning algorithm from getting stuck in local minimas.
+Momentum is often described as the learning rate of the learning rate. What it does is to prevent the learning algorithm from getting stuck in local minima.
 
 \paragraph{Sparsity}
-Lastly, the sparsity hyperparameter helps recognize which features of the input examples that are relevant. This is important because in some datasets, the feature arrays for each example will be very different in terms of values.
+Lastly, the sparsity hyperparameter helps recognize which features of the input examples that are relevant. This is important because, in some datasets, the feature arrays for each sample will be very different regarding values.
+
+\subsection{Overfitting}
+An important concept within the field of machine learning is overfitting. We say that a hypothesis overfits its training data when there exists an alternative hypothesis with the same or higher training error that generalizes better.
+
+In other words, overfitting refers to a hypothesis that models its training data too well. It learns the detail and the noise of the training data to the extent that it negatively impacts the performance of the hypothesis on new data. This means that the noise or random fluctuations in the training data is picked up and learned as concepts by the hypothesis. The problem is that these concepts do not apply to new data and negatively impact the hypothesis ability to generalize.
 
 \subsection{Convolutional neural networks}
-In recent years, convolutional neural networks (CNNs) have been recognized as very suitable for object recognition in images \cite{Patterson2017}. One of the main reasons why the world, research society recognizes the power of deep learning have been the efficancy of CNNs image recognition capabilities. The name comes from the networks use of convolutions, a mathematical operation on two functions in order to produce a third.
+In recent years, convolutional neural networks (CNN's) have been recognized as very suitable for object recognition in images \cite{Patterson2017}. One of the main reasons why the world, research society acknowledges the power of deep learning has been the efficiency of CNN's image recognition capabilities. The name comes from the networks use of convolutions, a mathematical operation on two functions to produce a third.
 
 \subsubsection{Biological Inspiration}
-As all neural networks, CNNs are very inspired by the biological neurons in animal brains. The CNNs are especially inspired by the visual cortex, which cells are very sensitive to small subregions of the input. One often say that these cells act as local filters over the input space, which also is the case for CNNs.
+Like all neural networks, CNN's are very inspired by the biological neurons in animal brains. The CNN's are mainly inspired by the visual cortex, which cells are very sensitive to small subregions of the input. One often says that these cells act as local filters over the input space, which also is the case for CNN's.
 
 \subsubsection{Difference from regular feed-forward multilayer neural networks}
-A well known problem when it comes to analyzing image data using regular feed-forward multilayer neural networks, is that they do not scale well with increasing image sizes. Imagine an color image with the size 400x400 pixels (which would be a regular sized picture) that are used as input for a ANN. Such an image, represented as a vector, would create $400*400*3=480 000$ different weight connections for each neuron in the first hidden layer. For a fully connected network, this would be the case for all layers to come, which would create a tremendous amount of weight connections.
+A well-known problem when it comes to analyzing image data using regular feed-forward multilayer neural networks is that they do not scale well with increasing image sizes. Imagine a color image with the size 400x400 pixels (which would be a regular sized picture) that are used as input for an ANN. Such an image, represented as a vector, would create $400*400*3=480 000$ different weight connections for each neuron in the first hidden layer. For a fully connected network, this would be the case for all layers to come, which would create a tremendous amount of weight connections.
 
 Convolutional neural networks solve this issue by representing the images in a three-dimensional structure, meaning that the input data is represented as a three-dimensional matrix with:
 
@@ -183,7 +186,7 @@ Convolutional neural networks solve this issue by representing the images in a t
 	\item RGB channels in depth
 \end{itemize}
 
-As will be discussed later, this structure is how CNNs have evolved from previous feed-forward networks, in terms of computational efficiency.
+As will be discussed later, this structure is how CNN's have evolved from previous feed-forward networks, regarding computational efficiency.
 
 \subsubsection{Architecture}
 The purpose of the network is to transform the input examples through a series of connected layers, into a set of class scores. A general architecture is presented in \autoref{fig:cnnarchitecture}.
@@ -195,18 +198,18 @@ The purpose of the network is to transform the input examples through a series o
 	\label{fig:cnnarchitecture}
 \end{figure}
 
-As seen in \autoref{fig:cnnarchitecture} the network can be divided into three sections; Input, Feature-extraction and Classification layer(s). The most interesting part of this structure is the feature-extraction layers, which is used to identify a number of features in the images, and from these construct higher-order features. The strategy of constructing high-order features is one of the key aspects of deep learning.
+As seen in \autoref{fig:cnnarchitecture} the network can be divided into three sections; Input, Feature-extraction and Classification layer(s). The most interesting part of this structure is the feature-extraction layers, which is used to identify features in the images, and from these construct higher-order features. The strategy of constructing high-order features is one of the key aspects of deep learning.
 
-\remark{ It is important to note that in a CNNs layers, the neurons are arranged in a three-dimensional structure, in order to match the input data, as described earlier.}
+\remark{ It is important to note that in a CNN's layers, the neurons are arranged in a three-dimensional structure, to match the input data, as described earlier.}
 
 \subsubsection{Convolutional layers}
-The convolution layers, seen in \autoref{fig:cnnarchitecture}, detect features in an image through what is called the convolution operation. As mentioned in the beginning of this chapter is a convolution operation a mathematical operation that transforms two functions (or sets of information) into one, through Fourier transformations. The way that this works, is that the layer applies certain filters, called kernel filters, to segments of its input using a technique called sliding window.\footnote{A technique that slides over a set of data, only analyzing a pre-defined patch size at a time \cite{Stanford2017}} The convolution operator is described in  \autoref{eq:convop}, where $I$ is the input data and $K$ is the kernel filter of size $h*w$.
+The convolution layers, seen in \autoref{fig:cnnarchitecture}, detect features in an image through what is called the convolution operation. As mentioned at the beginning of this chapter is a convolution operation a mathematical operation that transforms two functions (or sets of information) into one, through Fourier transformations. The way that this works is that the layer applies specific filters, called kernel filters, to segments of its input using a technique called sliding window.\footnote{ A technique that slides over a set of data, only analyzing a pre-defined patch size at a time \cite{Stanford2017}} The convolution operator is described in  \autoref{eq:convop}, where $I$ is the input data and $K$ is the kernel filter of size $h*w$.
 
 \begin{equation}\label{eq:convop}
 (I*K)_{xy} = \sum_{i=1}^{h}\sum_{j=1}^{w}K_{ij} \cdot I_{x+i-1,y+j-1}
 \end{equation}
 
-Such filters can for example be an edge kernel, which only passes through information containing edges. In most cases applying a filter means reducing the size of the data, thus reducing the number of neurons in each, upcoming layer.
+Such filters can, for example, be an edge kernel, which only passes through information containing edges. In most cases applying a filter means reducing the size of the data, thus reducing the number of neurons in each, upcoming layer.
 
 \begin{figure}[!h]
 	\centering
@@ -216,10 +219,10 @@ Such filters can for example be an edge kernel, which only passes through inform
 \end{figure}
 
 \subsubsection{ReLU layers}
-As seen in \autoref{fig:cnnarchitecture}, ReLU activation functions are often used in separate layers. This layer does not change the dimension of the input volume, but can change some of the pixel values.
+As seen in \autoref{fig:cnnarchitecture}, ReLU activation functions are often used in separate layers. This layer does not change the dimension of the input volume but can change some of the pixel values.
 
 \subsubsection{Pooling layers}\label{section:pooling}
-The pooling layers is an other important part of the convolutional neural networks. They help prevent overfitting, by reducing the size of the input data using what is called max pooling, as shown in \autoref{fig:maxpooling}
+The pooling layers is another important part of the convolutional neural networks. They help prevent overfitting, by reducing the size of the input data using what is called max pooling, as shown in \autoref{fig:maxpooling}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.5]{fig/pooling_layer.jpeg}
@@ -229,23 +232,14 @@ The pooling layers is an other important part of the convolutional neural networ
 
 \autoref{fig:maxpooling} presents a max pool with a 2x2 filter size, and a stride of 2, meaning that 2x2 pixels are compared and that the sliding window moves 2 pixels for each comparison. I practice this means that the 75\% of the activations from the previous layer is discarded.
 
-Links:\\
-https://www.pyimagesearch.com/2014/10/20/finding-shapes-images-using-python-opencv/\\
-https://www.pyimagesearch.com/2016/02/08/opencv-shape-detection/
-\\
-http://melvincabatuan.github.io/SLIC-Superpixels/
-\\
-https://www.gislounge.com/shadows-angles-measuring-object-heights-satellite-imagery/
-\\
-
 \section{Height estimation using remote sensing}\label{section:theoreticheight}
 
-There are many different ways of estimating heights using satellite data, which involves using lidar data, SAR data and regular satellite multispectral imagery. This section will give the theoretical background for some of the most commonly used techniques.
+There are many different ways of estimating heights using satellite data such as SAR and multispectral imagery. This section will give the theoretical background for some of the most commonly used techniques.
 
 \subsection{Synthetic Aperture Radar (SAR)}
-The first technique involves using a Synthetic Aperture Radar on a moving platform, in this case a satellite. By sequentially transmitting electromagnetic waves onto the earths surface and collecting the reflected echos, the SAR satellites are able to collect high-precision, 3-dimensional data.
+The first technique involves using a Synthetic Aperture Radar on a moving platform, in this case a satellite. By sequentially transmitting electromagnetic waves onto the earth's surface and collecting the reflected echoes, the SAR satellites can collect high-precision, 3-dimensional data.
 
-One of the key advantages of the SAR satellites is that they take advantage of the fact that they are moving quickly. Since the transmission and reception occurs at different times, the platform has moved, thus creating a synthetic aperture that is much larger than the satellite antenna (see \autoref{fig:syntheticaperture}).
+One of the key advantages of the SAR satellites is that they take advantage of the fact that they are moving quickly. Since the transmission and reception occur at different times, the platform has moved, thus creating a synthetic aperture that is much larger than the satellite antenna (see \autoref{fig:syntheticaperture}).
 
 \begin{figure}[!h]
 	\centering
@@ -256,12 +250,12 @@ One of the key advantages of the SAR satellites is that they take advantage of t
 
 The technique provides a finer spatial resolution to the collected data, making it possible to do height estimations with a sub-decimeter accuracy.
 
-\subsubsection{Interferometric synthetic aperture radar (InSAR)}
+\subsubsection{Interferometric synthetic aperture radar (InSAR)}\label{section:insar}
 While SAR makes use of amplitude and absolute phase of the returned signal, InSAR use a differential phase of the reflected signal, represented in what is called a phase image.
 
-Looking at a phase image completely isolated will not prove very useful, as it would appear visually random. This is because in practice, the phase of the return signal is affected by a lot of different factors, resulting in no apparent correlation between the pixels in the image.
+Looking at a phase image completely isolated will not prove very useful, as it would appear visually random. This is because, in practice, the phase of the return signal is affected by a lot of different factors, resulting in no apparent correlation between the pixels in the image.
 
-In order to get useful information these phase images, some of the factors, discussed above, has to be removed. The process of doing so is referred to as interferometry, and it uses two phase images taken from the exact same position in order to generate a interferogram (see \autoref{fig:interferogram}).
+To get useful information these phase images, some of the factors discussed above have to be removed. The process of doing so is referred to as interferometry, and it uses two phase images taken from the same position to generate an interferogram (see \autoref{fig:interferogram}).
 
 \begin{figure}[!h]
 	\centering
@@ -276,19 +270,18 @@ Producing an inferiogram consists of multiple steps:
 Using a correlation function the two images are co-registered by finding the offset and difference in geometry between them.
 
 \paragraph{Re-sampling}
-In the re-sampling step, one of the images (referred to as the slave) is re-sampled in order to match the geometry of the other (called the master). What this means in practice is that each pixel represents the same area of ground in both images.
+In the re-sampling step, one of the images (referred to as the slave) is re-sampled to match the geometry of the other (called the master). What this means in practice is that each pixel represents the same area of ground in both images.
 
 \paragraph{Cross-multiplication and flattening}
 After re-sampling the images the inferiogram is generated by taking the cross product of each pixel, and the interferometric phase due to the curvature of the earth is removed (flattening).
 
 \paragraph{Filtering}
-Lastly, it is common to filter the basic inferiogram in order to amplify the phase signal, and to interpolate over phase jumps in order to produce a continuous deformation field.
+Lastly, it is common to filter the basic inferiogram to amplify the phase signal and to interpolate over phase jumps to produce a continuous deformation field.
 
-\subsection{Light Detection And Ranging (LIDAR)}
-Another high precision technique for generating height data using satellites is using LIDAR. LIDAR is a surveying method that uses a pulsed ultraviolet, visible of near infrared light laser to map an area or an object. In the same way as SAR and InSAR, it used the reflected signal to measure the distance from the transmitter to the object.
+Can be used both to generate high precision digital elevation models by having two satellites record data synchronously and to measure height differences over a period very accurately.
 
 \subsection{Height detection using shadows from imagery}
-For height estimation of specific objects, shadow estimations can be applied. This technique uses a high resolution image, as well as knowledge about the position of the sun, the position of the image projection center and the length of the projected shadow in order to estimate an objects height (\autoref{fig:heightestimation}).
+For height estimation of specific objects, shadow estimations can be applied. This technique uses a high-resolution image, as well as knowledge about the position of the sun, the location of the image projection center and the length of the projected shadow to estimate an object's height (\autoref{fig:heightestimation}).
 
 \begin{figure}[!h]
 	\centering
@@ -303,7 +296,7 @@ Looking at \autoref{fig:heightestimation} the height of the object can be found 
 	tan(\mu) = \frac{H_{object}}{L_{shadow}} \quad \Rightarrow \quad L_{shadow} = \frac{H_{object}}{tan(\mu)}
 \end{equation}
 
-Since the satellite image rarely is taken with the projection center directly above the object (nadir angle = 0\textdegree), the blocked length of the shadow has to be estimated. Since the height of the object is the unknown, estimating the blocked length of the shadow is an iterative process, where a new calculated, temporary value for the height is used in each iteration. Calculating the length of the blocked shadow is also very straight forward: 
+Since the satellite image rarely is taken with the projection center directly above the object (nadir angle = 0\textdegree), the blocked length of the shadow has to be estimated. Since the height of the object is the unknown, estimating the blocked length of the shadow is an iterative process, where a new calculated, temporary value for the height is used in each iteration. Calculating the length of the blocked shadow is also very straightforward: 
 
 \begin{equation}\label{eq:blockedshadow}
 	tan(90 - \lambda) = \frac{L_{blockedshadow}}{H_{object}} \quad \Rightarrow \quad L_{blockedshadow} = H_{object}*tan(90-\lambda)

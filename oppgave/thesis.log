@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.24)  10 DEC 2017 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.24)  12 DEC 2017 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -898,8 +898,8 @@ Package: parskip 2001/04/09 non-zero parskip adjustments
 (/usr/local/texlive/2017/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 ) (./thesis.aux
-(./front.aux) (./preface.aux) (./acknowledgment.aux) (./summary.aux)
-(./chapter01.aux) (./chapter_theoretical_background.aux
+(./front.aux) (./preface.aux) (./summary.aux) (./chapter01.aux)
+(./chapter_theoretical_background.aux
 
 LaTeX Warning: Label `fig:parametricline' multiply defined.
 
@@ -1076,38 +1076,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `preface.aux'.
+\openout2 = `summary.aux'.
 
 
-(./preface.tex
+(./summary.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
 ) [1
 
 
 ]
-\openout2 = `acknowledgment.aux'.
+\openout2 = `preface.aux'.
 
- (./acknowledgment.tex
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 19.
+ (./preface.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
 ) [2
 
 
 ]
-\openout2 = `summary.aux'.
-
- (./summary.tex) [3
-
-
-]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 28.
  (./thesis.toc
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 1.
 
@@ -1133,8 +1124,8 @@ LaTeX Font Info:    Try loading font information for TS1+futs on input line 1.
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 4.
- [4
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
+ [3
 
 
 ])
@@ -1145,7 +1136,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 \include{chapter01}
+l.31 \include{chapter01}
                          [1]
 \openout2 = `chapter01.aux'.
 
@@ -1154,10 +1145,20 @@ Chapter 1.
 [2
 
 
-] [3] [4]) [5]
+] <fig/cushing_oklahoma.jpg, id=262, 366.77025pt x 227.6505pt>
+File: fig/cushing_oklahoma.jpg Graphic file (type jpg)
+
+<use fig/cushing_oklahoma.jpg>
+Package pdftex.def Info: fig/cushing_oklahoma.jpg used on input line 26.
+(pdftex.def)             Requested size: 366.76935pt x 227.64993pt.
+ [3 <./fig/cushing_oklahoma.jpg>]
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
+ [4]) [5]
 \openout2 = `chapter_theoretical_background.aux'.
 
- (./chapter_theoretical_background.tex
+
+(./chapter_theoretical_background.tex
 Chapter 2.
 
 Overfull \hbox (0.8802pt too wide) in paragraph at lines 6--7
@@ -1169,28 +1170,28 @@ Overfull \hbox (0.8802pt too wide) in paragraph at lines 6--7
 
 
 
-] <fig/parametric-line.png, id=299, 518.93875pt x 519.9425pt>
+] <fig/parametric-line.png, id=292, 518.93875pt x 519.9425pt>
 File: fig/parametric-line.png Graphic file (type png)
 
 <use fig/parametric-line.png>
 Package pdftex.def Info: fig/parametric-line.png used on input line 22.
 (pdftex.def)             Requested size: 155.68282pt x 155.98395pt.
 
-<fig/hough_transform.png, id=304, 1028.84375pt x 1028.84375pt>
+<fig/hough_transform.png, id=297, 1028.84375pt x 1028.84375pt>
 File: fig/hough_transform.png Graphic file (type png)
 
 <use fig/hough_transform.png>
 Package pdftex.def Info: fig/hough_transform.png used on input line 31.
 (pdftex.def)             Requested size: 205.7651pt x 205.7651pt.
  [7 <./fig/parametric-line.png> <./fig/hough_transform.png (PNG copy)>] <fig/su
-perpixels.png, id=327, 803.0pt x 604.2575pt>
+perpixels.png, id=320, 803.0pt x 604.2575pt>
 File: fig/superpixels.png Graphic file (type png)
 
 <use fig/superpixels.png>
 Package pdftex.def Info: fig/superpixels.png used on input line 50.
 (pdftex.def)             Requested size: 240.90186pt x 181.27864pt.
  [8 <./fig/superpixels.png>] [9] [10]
-<fig/backpropagation_two_layers.png, id=367, 148.3944pt x 211.0284pt>
+<fig/backpropagation_two_layers.png, id=360, 148.3944pt x 211.0284pt>
 File: fig/backpropagation_two_layers.png Graphic file (type png)
 
 <use fig/backpropagation_two_layers.png>
@@ -1202,81 +1203,72 @@ Package pdftex.def Info: fig/backpropagation_two_layers.png used on input line
 LaTeX Warning: Reference `section:svm' on page 12 undefined on input line 145.
 
 [12] [13]
-Overfull \hbox (4.5602pt too wide) in paragraph at lines 178--179
+Overfull \hbox (4.5602pt too wide) in paragraph at lines 181--182
 []\T1/futs/m/n/12 Convolutional neu-ral net-works solve this is-sue by rep-re-s
 ent-ing the im-ages in a three-dimensional
  []
 
-[14] <fig/cnn_architecture.png, id=411, 717.6411pt x 370.2633pt>
+[14] <fig/cnn_architecture.png, id=403, 717.6411pt x 370.2633pt>
 File: fig/cnn_architecture.png Graphic file (type png)
 
 <use fig/cnn_architecture.png>
-Package pdftex.def Info: fig/cnn_architecture.png used on input line 193.
+Package pdftex.def Info: fig/cnn_architecture.png used on input line 196.
 (pdftex.def)             Requested size: 430.58798pt x 222.15968pt.
 LaTeX Font Info:    Font shape `T1/futs/bx/it' in size <12> not available
-(Font)              Font shape `T1/futs/b/it' tried instead on input line 200.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 203.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 203.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 203.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 203.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 203.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 203.
+(Font)              Font shape `T1/futs/b/it' tried instead on input line 203.
  [15 <./fig/cnn_architecture.png>]
-<fig/kernel_filter.png, id=429, 164.25pt x 77.307pt>
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 206.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 206.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 206.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 206.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 206.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 206.
+
+<fig/kernel_filter.png, id=420, 164.25pt x 77.307pt>
 File: fig/kernel_filter.png Graphic file (type png)
 
 <use fig/kernel_filter.png>
-Package pdftex.def Info: fig/kernel_filter.png used on input line 213.
+Package pdftex.def Info: fig/kernel_filter.png used on input line 216.
 (pdftex.def)             Requested size: 246.37437pt x 115.96019pt.
 
-<fig/pooling_layer.jpeg, id=434, 789.95125pt x 369.38pt>
+<fig/pooling_layer.jpeg, id=425, 789.95125pt x 369.38pt>
 File: fig/pooling_layer.jpeg Graphic file (type jpg)
 
 <use fig/pooling_layer.jpeg>
-Package pdftex.def Info: fig/pooling_layer.jpeg used on input line 225.
+Package pdftex.def Info: fig/pooling_layer.jpeg used on input line 228.
 (pdftex.def)             Requested size: 394.97466pt x 184.68954pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--240
-
- []
-
-[16 <./fig/kernel_filter.png>] <fig/sar.jpg, id=453, 407.5225pt x 265.99374pt>
+ [16 <./fig/kernel_filter.png>] [17 <./fig/pooling_layer.jpeg>] <fig/sar.jpg, i
+d=451, 407.5225pt x 265.99374pt>
 File: fig/sar.jpg Graphic file (type jpg)
-
-<use fig/sar.jpg>
-Package pdftex.def Info: fig/sar.jpg used on input line 252.
+ <use fig/sar.jpg>
+Package pdftex.def Info: fig/sar.jpg used on input line 246.
 (pdftex.def)             Requested size: 285.2638pt x 186.19434pt.
 
 
-Package natbib Warning: Citation `Yu2012' on page 17 undefined on input line 25
-3.
+Package natbib Warning: Citation `Yu2012' on page 18 undefined on input line 24
+7.
 
-[17 <./fig/pooling_layer.jpeg>]
-<fig/inferiogram.png, id=460, 1031.855pt x 401.5pt>
+<fig/inferiogram.png, id=453, 1031.855pt x 401.5pt>
 File: fig/inferiogram.png Graphic file (type png)
  <use fig/inferiogram.png>
-Package pdftex.def Info: fig/inferiogram.png used on input line 268.
+Package pdftex.def Info: fig/inferiogram.png used on input line 262.
 (pdftex.def)             Requested size: 412.73468pt x 160.59715pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18 <./fig/sar.jpg>]
-<fig/height_estimation.png, id=471, 602.25pt x 398.48875pt>
+<fig/height_estimation.png, id=464, 602.25pt x 398.48875pt>
 File: fig/height_estimation.png Graphic file (type png)
 
 <use fig/height_estimation.png>
-Package pdftex.def Info: fig/height_estimation.png used on input line 295.
+Package pdftex.def Info: fig/height_estimation.png used on input line 288.
 (pdftex.def)             Requested size: 301.12425pt x 199.24388pt.
 
 
@@ -1292,101 +1284,102 @@ Chapter 3.
 
 
 
-] [22] <fig/deconv.png, id=527, 958.58125pt x 270.00874pt>
+] [22] <fig/deconv.png, id=522, 958.58125pt x 270.00874pt>
 File: fig/deconv.png Graphic file (type png)
 
 <use fig/deconv.png>
-Package pdftex.def Info: fig/deconv.png used on input line 42.
+Package pdftex.def Info: fig/deconv.png used on input line 40.
 (pdftex.def)             Requested size: 479.28946pt x 135.00403pt.
 
-Overfull \hbox (7.25822pt too wide) in paragraph at lines 42--43
+Overfull \hbox (7.25822pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
 [23 <./fig/deconv.png>]
-<fig/inception_layer.png, id=548, 638.385pt x 685.56125pt>
+<fig/inception_layer.png, id=542, 638.385pt x 685.56125pt>
 File: fig/inception_layer.png Graphic file (type png)
 
 <use fig/inception_layer.png>
-Package pdftex.def Info: fig/inception_layer.png used on input line 64.
+Package pdftex.def Info: fig/inception_layer.png used on input line 62.
 (pdftex.def)             Requested size: 319.19171pt x 342.77979pt.
  [24 <./fig/inception_layer.png>]
-<fig/vgg16.png, id=566, 471.7625pt x 277.035pt>
+<fig/vgg16.png, id=560, 471.7625pt x 277.035pt>
 File: fig/vgg16.png Graphic file (type png)
  <use fig/vgg16.png>
-Package pdftex.def Info: fig/vgg16.png used on input line 78.
+Package pdftex.def Info: fig/vgg16.png used on input line 76.
 (pdftex.def)             Requested size: 330.23149pt x 193.92317pt.
 
-<fig/degradation.png, id=570, 873.2625pt x 312.16624pt>
+<fig/degradation.png, id=564, 873.2625pt x 312.16624pt>
 File: fig/degradation.png Graphic file (type png)
 
 <use fig/degradation.png>
-Package pdftex.def Info: fig/degradation.png used on input line 90.
+Package pdftex.def Info: fig/degradation.png used on input line 88.
 (pdftex.def)             Requested size: 436.63017pt x 156.08273pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25 <./fig/vgg16.png (PNG copy)>]
-<fig/shortcut_connection.png, id=586, 635.37375pt x 357.335pt>
+<fig/shortcut_connection.png, id=580, 635.37375pt x 357.335pt>
 File: fig/shortcut_connection.png Graphic file (type png)
 
 <use fig/shortcut_connection.png>
-Package pdftex.def Info: fig/shortcut_connection.png used on input line 113.
+Package pdftex.def Info: fig/shortcut_connection.png used on input line 111.
 (pdftex.def)             Requested size: 317.6861pt x 178.66705pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26 <./fig/degradation.png>]
-<fig/casenet_edge_detection.png, id=607, 609.27625pt x 590.205pt>
-File: fig/casenet_edge_detection.png Graphic file (type png)
-
-<use fig/casenet_edge_detection.png>
-Package pdftex.def Info: fig/casenet_edge_detection.png used on input line 128.
-
-(pdftex.def)             Requested size: 243.70618pt x 236.0778pt.
- [27 <./fig/shortcut_connection.png> <./fig/casenet_edge_detection.png>]
-<fig/aerial_segmentation.png, id=621, 943.525pt x 394.47375pt>
+<fig/aerial_segmentation.png, id=601, 943.525pt x 394.47375pt>
 File: fig/aerial_segmentation.png Graphic file (type png)
 
 <use fig/aerial_segmentation.png>
-Package pdftex.def Info: fig/aerial_segmentation.png used on input line 141.
+Package pdftex.def Info: fig/aerial_segmentation.png used on input line 125.
 (pdftex.def)             Requested size: 377.4033pt x 157.7867pt.
- [28 <./fig/aerial_segmentation.png>] [29]
-<fig/insar.png, id=662, 486.81876pt x 357.335pt>
-File: fig/insar.png Graphic file (type png)
- <use fig/insar.png>
-Package pdftex.def Info: fig/insar.png used on input line 177.
-(pdftex.def)             Requested size: 194.72404pt x 142.93146pt.
-
-<fig/shadow_classification.png, id=673, 785.93625pt x 232.87pt>
-File: fig/shadow_classification.png Graphic file (type png)
-
-<use fig/shadow_classification.png>
-Package pdftex.def Info: fig/shadow_classification.png used on input line 189.
-(pdftex.def)             Requested size: 471.56538pt x 139.72307pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30 <./fig/insar.png>]
-<fig/shadow_height_results.png, id=692, 795.97375pt x 728.7225pt>
+[27 <./fig/shortcut_connection.png>] [28 <./fig/aerial_segmentation.png>]
+<fig/insar.png, id=646, 486.81876pt x 357.335pt>
+File: fig/insar.png Graphic file (type png)
+ <use fig/insar.png>
+Package pdftex.def Info: fig/insar.png used on input line 161.
+(pdftex.def)             Requested size: 194.72404pt x 142.93146pt.
+ [29 <./fig/insar.png>] <fig/shadow_classification.png, id=666, 785.93625pt x 2
+32.87pt>
+File: fig/shadow_classification.png Graphic file (type png)
+
+<use fig/shadow_classification.png>
+Package pdftex.def Info: fig/shadow_classification.png used on input line 173.
+(pdftex.def)             Requested size: 471.56538pt x 139.72307pt.
+
+<fig/shadow_height_results.png, id=672, 795.97375pt x 728.7225pt>
 File: fig/shadow_height_results.png Graphic file (type png)
 
 <use fig/shadow_height_results.png>
-Package pdftex.def Info: fig/shadow_height_results.png used on input line 203.
+Package pdftex.def Info: fig/shadow_height_results.png used on input line 187.
 (pdftex.def)             Requested size: 318.38387pt x 291.48383pt.
-) [31 <./fig/shadow_classification.png> <./fig/shadow_height_results.png>]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [30 <./fig/shadow_classification.png>] [31 <./fig/shadow_height_results.png>]
 \openout2 = `chapter_suggestion_for_solution.aux'.
 
- (./chapter_suggestion_for_solution.tex
+(./chapter_suggestion_for_solution.tex
 Chapter 4.
 [32
 
 
 
-] <fig/superpixel_segmentation.png, id=725, 1179.40625pt x 923.45pt>
+]
+
+Package natbib Warning: Citation `AirBus2017' on page 33 undefined on input lin
+e 17.
+
+<fig/superpixel_segmentation.png, id=714, 1179.40625pt x 923.45pt>
 File: fig/superpixel_segmentation.png Graphic file (type png)
 
 <use fig/superpixel_segmentation.png>
@@ -1397,7 +1390,7 @@ Package pdftex.def Info: fig/superpixel_segmentation.png used on input line 24.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/hough_transform_circles.png, id=726, 1107.13625pt x 870.25125pt>
+<fig/hough_transform_circles.png, id=715, 1107.13625pt x 870.25125pt>
 File: fig/hough_transform_circles.png Graphic file (type png)
 
 <use fig/hough_transform_circles.png>
@@ -1415,7 +1408,7 @@ Overfull \hbox (2.28015pt too wide) in paragraph at lines 38--39
  []
 
 [33] [34 <./fig/superpixel_segmentation.png>]
-<fig/hough_transform_difference.png, id=750, 1206.5075pt x 607.26875pt>
+<fig/hough_transform_difference.png, id=739, 1206.5075pt x 607.26875pt>
 File: fig/hough_transform_difference.png Graphic file (type png)
 
 <use fig/hough_transform_difference.png>
@@ -1426,51 +1419,57 @@ Package pdftex.def Info: fig/hough_transform_difference.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35 <./fig/hough_transform_circles.png>]) [36 <./fig/hough_transform_difference
-.png>]
+[35 <./fig/hough_transform_circles.png>] [36 <./fig/hough_transform_difference.
+png>] [37]) [38]
 \openout2 = `chapter0n.aux'.
 
  (./chapter0n.tex
 Chapter 5.
-[37
+[39
 
 
 
-]) [38] (./thesis.bbl [39
+]) [40] (./thesis.bbl [41
 
 
-] [40])
+] [42])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-[41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
- (./thesis.aux (./front.aux) (./preface.aux) (./acknowledgment.aux)
-(./summary.aux) (./chapter01.aux) (./chapter_theoretical_background.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
+[43]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
+ (./thesis.aux (./front.aux) (./summary.aux) (./preface.aux)
+(./chapter01.aux) (./chapter_theoretical_background.aux)
 (./chapter_related_work.aux) (./chapter_suggestion_for_solution.aux)
 (./chapter0n.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 231012A0CFF290491BA66A351B6EF5B0;3293.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: D45BBF350500C2E83B4A5E2EA27F5ED2;3189
+(rerunfilecheck)             After:  C15D94C2DAF34B27962CBDABFEC873FF;3189.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 8961 strings out of 492995
- 126481 string characters out of 6132703
- 215653 words of memory out of 5000000
- 12023 multiletter control sequences out of 15000+600000
+ 8962 strings out of 492995
+ 126441 string characters out of 6132703
+ 215401 words of memory out of 5000000
+ 12025 multiletter control sequences out of 15000+600000
  103621 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,16n,34p,1337b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,16n,34p,1349b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/te
@@ -1481,10 +1480,10 @@ xlive/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2
 xmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (46 pages, 9148908 bytes).
+Output written on thesis.pdf (47 pages, 8044035 bytes).
 PDF statistics:
- 868 PDF objects out of 1000 (max. 8388607)
- 757 compressed objects within 8 object streams
- 207 named destinations out of 1000 (max. 500000)
- 476 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 885 PDF objects out of 1000 (max. 8388607)
+ 774 compressed objects within 8 object streams
+ 213 named destinations out of 1000 (max. 500000)
+ 468 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -104,6 +104,13 @@ Liu, W., Suzuki, K., and Yamazaki, F. (2015).
 \newblock {\em 2015 Joint Urban Remote Sensing Event, JURSE 2015}, (June
   2010):1--4.
 
+\bibitem[\protect\astroncite{Marmanis et~al.}{2016}]{Marmanis2016}
+Marmanis, D., Wegner, J.~D., Galliani, S., Schindler, K., Datcu, M., and
+  Stilla, U. (2016).
+\newblock {Semantic Segmentation of Aerial Images With an Ensemble of Cnns}.
+\newblock {\em ISPRS Annals of Photogrammetry, Remote Sensing and Spatial
+  Information Sciences}, III-3:473--480.
+
 \bibitem[\protect\astroncite{Mcculloch and Pitts}{1943}]{Mcculloch1990}
 Mcculloch, W.~S. and Pitts, W. (1943).
 \newblock {A logical calculus of the ideas immanent in nervous activity}.

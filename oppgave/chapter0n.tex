@@ -3,34 +3,26 @@
 % !TEX spellcheck = en-US
 %%=========================================
 \chapter[Conclusions]{Conclusions, Discussion, and Recommendations for Further Work}
-%%This is the last chapter
-%In this final chapter you should sum up what you have done and which results you have got. You should also discuss your findings, and give recommendations for further work.
 
 Many attempts have been made in terms of semantic segmentation, and advances are still being made. 
 
-
 %%=========================================
 \section{Summary and Conclusions}
-% Here, you present a brief summary of your work and list the main results you have got. You should give comments to each of the objectives in Chapter 1 and state whether or not you have met the objective. If you have not met the objective, you should explain why (e.g., data not available, too difficult).
+In this paper, we have been investigating different approaches to estimate the total inventory of the famous price settlement point for West Texas Intermediate of the New York Mercantile Exchange in Cushing, Oklahoma. To do so, two different problems have been identified, which is locating the oil tanks in from an aerial image and estimating the inventory based on the height of the tanks floating roofs.
 
-% This section is similar to the Summary and Conclusions in the beginning of your report, but more detailed---referring to the the various sections in the report.
+First, the theoretical background for different methods is presented, including standard approaches for semantic segmentation, theory related to artificial neural networks, height estimation using SAR and InSAR analysis and trigonometrical height estimation using building shadows cast by the sun.
 
-In this paper we have been investigating different approaches in order to estimate the total inventory of the famous price settlement point for West Texas Intermediate of the New York Mercantile Exchange in Cushing, Oklahoma. In order to do so, two different problems have been identified, which is locating the oil tanks in from an aerial image and estimating the inventory based on the height of the tanks floating roofs.
+Furthermore, related work for the different theoretical subjects is presented. The primary purpose of this chapter is to give an understanding of what has been done so far, and where the technology is today.
 
-First the theoretical background for different methods are presented, including standard approaches for semantic segmentation, theory related to artificial neural networks, height estimation using SAR and InSAR analysis and trigonometrical height estimation using building shadows cast by the sun.
+Then the different methods are compared, evaluated and combined to come up with solutions that are suitable for the task at hand. Two different approaches were selected as most suitable; Direct estimation of the tanks inventory from shadow measurements using a modified reset and using a generalized Hough transform for tank detection, thus limiting the shadow search space, and then applying a modified ResNet for estimating a single tanks inventory.
 
-Then some related work related to this theory is presented.
+Lastly, the implementation of the method is discussed by presenting some tools that enable fast experimentation with deep neural networks and different approaches related to requiring enough training data is discussed.
 
-%%=========================================
+There exists an extensive amount of different techniques for both aerial image segmentation and height estimation from remote sensing. In the last five years, convolutional neural have played a crucial role in the development of image segmentation methods, but their applications reach far beyond this particular field. In this paper both traditional and machine learning based methods have been explored through theory and related work. Using this knowledge two methods has been evaluated as the most plausible approached to retrieve an accurate and frequently updated estimate of the total oil inventory in the tanks located in Cushing, Oklahoma.
+
+For further work, these methods should be implemented and tested to determine if it is possible to do precise enough estimations. If so, there would lie a great economic potential in these numbers because of Cushing's importance as a price settling point for West Texas Intermediate of the New York Mercantile Exchange.
+
 \section{Discussion}
-Here, you may discuss your findings based on your results, their strengths and limitations. Note that this discussion is more high level than discussions made in relation to results you have achieved and presented in the previous chapter. The discussion here should put your work in larger context. You may address if you achieved what you had intended to do, why not (if you did not), if you got results in which you did not expect, why the results are important, why there are limitations in using the results, or if there are opportunities to transfer your results and findings into other domains, and so on.
-%%=========================================
-\section{Recommendations for Further Work}
-You should give recommendations to possible extensions to your work. The recommendations should be as specific as possible, preferably with an objective and an indication of a possible approach.
+The two methods selected as potential solutions in this paper are chosen because they present the largest likelihood of solving the specific problem presented. The decision is based on the availability of frequently updated satellite data and a certain level of accuracy. This being said, there lies a huge potential in information extraction from frequently updated remote sensing data that could benefit from the other methods presented in this paper. Especially methods within the field of machine learning could be interesting because of their ability to generalize beyond the data they have been trained on. 
 
-The recommendations may be classified as:
-\begin{itemize}
-\item Short-term
-\item Medium-term
-\item Long-term
-\end{itemize}
+With new satellite technology being developed every year providing open, updated data at increasing frequencies, it is important to develop methods that can derive, process and analyze these methods automatically. Hopefully, this article can provide some insight as to what exists and how they can be taken advantage of in any further research.
